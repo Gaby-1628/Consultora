@@ -73,29 +73,29 @@ header nav section h1{
             background-color: #5e7094;
         }
 
-        .menu_nesting{
-            list-style: none;
-            transition: clip-path .3s;
-            clip-path: var(--clip);
-            position: absolute;
-            height: 200px;
-            right: 0;
-            bottom: 0;
-            width: max-content;
-            transform: translateY(100%);
-            background-color: #002;
-        }
-        .menu_nesting2{
-            list-style: none;
-            transition: clip-path .3s;
-            clip-path: var(--clip);
-            position: absolute;
-            height: 268px;
-            right: 0;
-            bottom: 0;
-            width: max-content;
-            transform: translateY(100%);
-            background-color: #002;
+.menu_nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #002;
+    }
+    .menu_nesting2{
+        list-style: none;
+        transition: clip-path .3s;
+        clip-path: var(--clip);
+        position: absolute;
+        height: 136px;
+        right: 0;
+        bottom: 0;
+        width: max-content;
+        transform: translateY(100%);
+        background-color: #002;
         }
 
 .menu_link--inside{
