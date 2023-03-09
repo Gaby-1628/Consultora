@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+header nav section h1{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.menu{
+    background-color: #002;
+    color: #777;
+    height: 70px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    z-index: 10;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+    .menu_item:hover{
+        --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        --transform: rotate(0);
+    }
+
+    .fa-solid{
+        transform: var(--transform);
+        transition: transform .3s;
+        display: block;
+        right: 3px;
+    }
+    
+    .menu_link{
+        height: 100%;
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+    }
+        .menu_link:hover{
+            background-color: #5e7094;
+        }
+
+        .menu_nesting{
+            list-style: none;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            position: absolute;
+            height: 200px;
+            right: 0;
+            bottom: 0;
+            width: max-content;
+            transform: translateY(100%);
+            background-color: #002;
+        }
+        .menu_nesting2{
+            list-style: none;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            position: absolute;
+            height: 268px;
+            right: 0;
+            bottom: 0;
+            width: max-content;
+            transform: translateY(100%);
+            background-color: #002;
+        }
+
+.menu_link--inside{
+    height: 66px;
+    padding: 30px, 100px, 30px, 20px;
+}
+.menu_link--inside:hover{
+    background-color: #5e7094;
+}
