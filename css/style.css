@@ -20,7 +20,7 @@ header nav section h1{
 }
 
 .menu{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: #777;
     height: 100px;
 }
@@ -106,7 +106,7 @@ header nav section h1{
     background-color: #5e7094;
 }
 
-#banner{
+/* #banner{
     height: 600px;
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -114,8 +114,8 @@ header nav section h1{
     align-items: center;
     margin-bottom: 62px;
     background:
-         linear-gradient(rgba(0, 36, 84, 0.578),rgba(0, 37, 84, 0.578)),
-         url(banner.jpeg);
+        linear-gradient(rgba(0, 36, 84, 0.578),rgba(0, 37, 84, 0.578)),
+        url(banner.jpeg);
         background-size:cover ;
 }
 
@@ -123,9 +123,51 @@ header nav section h1{
     color: #fff;
     margin-top: 300px;
     margin-left: 150px;
+} */
+
+.header{
+    height: 760px;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
+.content{
+    max-width: 80rem;
+    margin-left: 100px;
+}
 
+.header-video{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+}
+    .header-video video{
+        width: 100%;
+    }
+
+.header-overlay{
+    height: 760px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: .75;
+}
+
+.header-content{
+    z-index: 2;
+}
+    .header-content h1{
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin-top: 180px;
+    }
 
 #vision{
     background-color: #2C4C7D;
@@ -139,8 +181,8 @@ header nav section h1{
 }
 
 #imagen img{
-  width: 100%;
-  height: 400px;
+    width: 100%;
+    height: 400px;
 }
 
 #vision-texto{
@@ -152,14 +194,18 @@ header nav section h1{
 
 #vision-texto h1{
     color: #fff;
-    margin-top: 130px;
+    text-align: right;
+    margin-top: 60px;
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-bottom: 40px;
 }
 
 #vision-texto p{
     color: #fff;
+    text-align: right;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -184,9 +230,9 @@ header nav section h1{
 
 #valores-texto h1{
     color: #2C4C7D;
-    margin-top: 130px;
+    margin-top: 60px;
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #valores-texto p{
