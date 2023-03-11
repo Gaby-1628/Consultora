@@ -8,7 +8,7 @@ window.sr = ScrollReveal();
 
     sr.reveal('#vision-texto', {
         duration: 3000,
-        origin: 'right',
+        origin: 'left',
         distance: '-100px'
     });
 
