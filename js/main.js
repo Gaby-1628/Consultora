@@ -17,3 +17,9 @@ window.sr = ScrollReveal();
         origin: 'right',
         distance: '-100px'
     });
+
+    sr.reveal('#footer-content', {
+        duration: 3000,
+        origin: 'top',
+        distance: '-100px'
+    });
