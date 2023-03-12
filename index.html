@@ -7,7 +7,7 @@
     <title>Agil Main</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <script src="js/scrollreveal.js"></script>
 </head>
 <body>
@@ -95,6 +95,19 @@
                 </div>
             </div>
         </section>
+        <section id="contacto">
+            <form action="contacto.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre:">
+                <input type="text" name="email" placeholder="Email:">
+                <textarea name="consulta" placeholder="Consulta:"></textarea>
+                <button>Enviar</button>
+                <div id="mensajes">
+                    <span id="errNombre"></span>
+                    <span id="errEmail"></span>
+                    <span id="errConsulta"></span>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section id="footer-content">
@@ -117,6 +130,9 @@
             </div>
         </section>
     </footer>
+    <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <script src="js/main.js"></script>
 </body>
 </html>

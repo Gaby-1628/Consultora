@@ -173,14 +173,14 @@ header nav section h1{
     }
 
 .btn{
-    background: #c44569;
+    background: #2C4C7D;
     color: #fff;
     padding: 10px, 20px;
     text-decoration: none;
     transform: 5;
 }
     .btn:hover{
-        background: #d47f97;
+        background: #669cc5;
     }
 
 #vision{
@@ -257,6 +257,7 @@ header nav section h1{
 #mision{
     width: 100%;
     height: 500px;
+    margin-top: 260px;
 }
 
 #mision h1{
@@ -271,10 +272,109 @@ header nav section h1{
     text-align: center;
 }
 
+#contacto{
+    width: 1250px;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #14305B;
+    border-radius: 8px;
+}
+#contacto form{
+    width: 550px;
+    margin: auto;
+}
+#contacto form input,
+ #contacto form textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0px;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #2C4C7D;
+    border: 1px solid #001f5e;
+    background-color: #C3DBFF;
+    border-radius: 5px;
+}
+    
+#contacto form input::placeholder,
+#contacto form textarea::placeholder{
+    color: #062a64;
+}
+#contacto form textarea{
+    height: 152px;
+    resize: none;
+}
+
+#contacto button{
+    width: 212px;
+    padding: 8px 0px;
+    border: 1px solid #2C4C7D;
+    border-radius: 8px;
+    color: #2C4C7D;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #3c3c3c;
+    transition: 500ms;
+    cursor: pointer;
+    background-color: #C3DBFF;
+}
+
+#contacto button:hover{
+    color: #C3DBFF;
+    background-color: #2C4C7D;
+}
+
+#mensajes{
+       margin-top: 12px;
+}
+
+#mensajes span{
+    display: block;
+    font-size: 18px;
+    color: #2C4C7D;
+}
+
+#mensaje{
+    display: block;
+    margin: auto;
+    color: #2C4C7D;
+    font-size: 20px;
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #00be03;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #00be03;
+    background-color: #fff;
+}
+
+
 #footer-content{
     width: 100%;
     height: 250px;
     background: #14305B;
+    margin-top: 90px;
 }
 
 #redes-sociales{
