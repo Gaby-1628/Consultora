@@ -23,3 +23,9 @@ window.sr = ScrollReveal();
         origin: 'top',
         distance: '-100px'
     });
+
+    // sr.reveal('#contacto', {
+    //     duration: 3000,
+    //     origin: 'top',
+    //     distance: '-100px'
+    // });
