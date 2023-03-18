@@ -88,18 +88,6 @@ header nav section h1{
     transform: translateY(100%);
     background-color: rgb(255, 255, 255);
     }
-    .menu_nesting2{
-        list-style: none;
-        transition: clip-path .3s;
-        clip-path: var(--clip);
-        position: absolute;
-        height: 136px;
-        right: 0;
-        bottom: 0;
-        width: max-content;
-        transform: translateY(100%);
-        background-color: rgb(255, 255, 255);
-        }
 
 .menu_link--inside{
     height: 66px;
@@ -108,6 +96,8 @@ header nav section h1{
 .menu_link--inside:hover{
     background-color: #5e7094;
 }
+
+
 
 /* #banner{
     height: 600px;
@@ -183,6 +173,50 @@ header nav section h1{
         background: #669cc5;
     }
 
+
+.banner{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#carouselExampleSlidesOnly{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+}
+    #carouselExampleSlidesOnly img{
+        width: 100%;
+        height: 600px;
+        margin: auto;
+        display: flex;
+    }
+
+.banner-overlay{
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: .80;
+}
+
+.header-serv{
+    z-index: 2;
+}
+    .header-serv h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-top: 240px;
+        margin-left: 550px;
+    }
+
 #vision{
     background-color: #2C4C7D;
 }
@@ -191,7 +225,6 @@ header nav section h1{
     background-color: transparent;
     float: left;
     width: 50%;
-
 }
 
 #imagen img{
@@ -410,3 +443,74 @@ footer{
         margin-left: 60px;
         padding: 20px;
     }
+
+
+
+/* ------------------------------------------------------------ */
+/* --------------------- Seccion TECNOLOGIAS ------------------ */
+/* ------------------------------------------------------------ */
+
+    #tcn{
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+    }
+    
+    #tcn h1{
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+    
+    #tcn p{
+        text-align: center;
+    }
+
+/* ------------------------------------------------------------ */
+/* --------------------- Seccion INDIVIDUOS ------------------ */
+/* ------------------------------------------------------------ */
+
+    #one{
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+    }
+    
+    #one h1{
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+    
+    #one p{
+        text-align: center;
+    }
+
+#exaples_item{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.content_item{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background: #fff;
+}
+
+.img{
+    background-color: transparent;
+    float: left;
+    width: 50%;
+}
+    .img img{
+        width: 50%;
+        height: 200px;
+        margin-left: 200px;
+    }
+

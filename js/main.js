@@ -29,3 +29,32 @@ window.sr = ScrollReveal();
     //     origin: 'top',
     //     distance: '-100px'
     // });
+
+
+/* --------------------- Seccion TECNOLOGIAS ------------------ */
+
+    sr.reveal('#tcn', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '-100px'
+    });
+
+
+/* --------------------- Seccion INDIVIDUOS ------------------ */
+
+sr.reveal('#one', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
+sr.reveal('.text_item', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+sr.reveal('.img', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
