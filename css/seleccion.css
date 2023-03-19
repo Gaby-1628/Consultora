@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+header nav section h1{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.menu{
+    background-color: #fff;
+    color: #777;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 3;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    z-index: 10;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+    .menu_item:hover{
+        --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        --transform: rotate(0);
+    }
+
+    .fa-solid{
+        transform: var(--transform);
+        transition: transform .3s;
+        display: block;
+        right: 3px;
+    }
+    
+    .menu_link{
+        height: 100%;
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        text-decoration: none;
+        color: #14305B;
+    }
+        .menu_link:hover{
+            background-color: #5e7094;
+        }
+
+.menu_nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: rgb(255, 255, 255);
+    }
+
+.menu_link--inside{
+    height: 66px;
+    padding: 30px, 100px, 30px, 20px;
+}
+.menu_link--inside:hover{
+    background-color: #5e7094;
+}
+
+#banner{
+    height: 450px;
+    background:
+        linear-gradient(rgba(69, 82, 95, 0.578),rgba(9, 21, 34, 0.832)),
+        url(banner.jpeg);
+        background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: flex;
+    align-items: center;
+}
+
+#banner h1{
+    color: #fff;
+    margin-left: 500px;
+    margin-top: 250px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;;
+} 
+*/
+
+#seleccion-personal h1{
+    color: #14305B;
+    margin-top: 500px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+#revelamiento{
+    background-color: #14305B;
+    color: #fff;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#revelamiento p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#recruiting-{
+    background-color: #ffffff;
+    color: #14305B;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
+}
+
+#recruiting p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#entrevistas-{
+    background-color: #14305B;
+    color: #fff;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#entrevistas p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#Psicotécnicos-{
+    background-color: #ffffff;
+    color: #14305B;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
+}
+
+#Psicotécnicos p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#presentacion-{
+    background-color: #14305B;
+    color: #fff;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#presentacion p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#proceso-{
+    background-color: #ffffff;
+    color: #14305B;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    margin-left: 235px;
+    margin-top: 100px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
+}
+
+#proceso p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
