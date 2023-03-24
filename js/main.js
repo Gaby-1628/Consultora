@@ -58,3 +58,42 @@ sr.reveal('.img', {
     origin: 'right',
     distance: '-100px'
 });
+
+/* --------------------- Seccion SELECCION DE PERSONAL ------------------ */    
+
+sr.reveal('#info', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
+sr.reveal('#revelamiento-', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+sr.reveal(' #recruiting-', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});
+sr.reveal('#entrevistas-', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+sr.reveal(' #Psicotécnicos-', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});
+sr.reveal('#presentacion-', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+sr.reveal(' #proceso-', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});

@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"> 
     <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="php/contacto.php">
 </head>
 <body>
     <header>
@@ -63,6 +64,7 @@
                     </li>
                     <li class="menu_item">
                         <a href="#" class="menu_link">Contacto</a>
+                        <a href="#contacto" class="menu_link">Contacto</a>
                     </li>
                 </ul>
             </section>
@@ -110,7 +112,7 @@
             </div>
         </section>
         <section id="contacto">
-            <form action="contacto.php" method="post">
+            <form id="form" action="contacto.php" method="post">
                 <input type="text" name="nombre" placeholder="Nombre:">
                 <input type="text" name="email" placeholder="Email:">
                 <textarea name="consulta" placeholder="Consulta:"></textarea>
