@@ -19,6 +19,15 @@ header nav section h1{
     letter-spacing: 2px;
 }
 
+#logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.logo{
+    left: 0;
+}
+
 .menu{
     background-color: #fff;
     color: #777;
@@ -88,6 +97,19 @@ header nav section h1{
     transform: translateY(100%);
     background-color: rgb(255, 255, 255);
     }
+
+    .menu_nesting2{
+        list-style: none;
+        transition: clip-path .3s;
+        clip-path: var(--clip);
+        position: absolute;
+        height: 134px;
+        right: 0;
+        bottom: 0;
+        width: max-content;
+        transform: translateY(100%);
+        background-color: rgb(255, 255, 255);
+        }
 
 .menu_link--inside{
     height: 66px;
@@ -468,15 +490,9 @@ footer{
         text-align: center;
     }
 
-.content_item2{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    background: #2C4C7D;
-}
 
 /* ------------------------------------------------------------ */
-/* --------------------- Seccion INDIVIDUOS ------------------ */
+/* --------------------- Seccion INDIVIDUOS ------------------- */
 /* ------------------------------------------------------------ */
 
     #one{
@@ -521,3 +537,52 @@ footer{
         margin-left: 200px;
     }
 
+
+/* ------------------------------------------------------------ */
+/* --------------------- Seccion INDIVIDUOS ------------------- */
+/* ------------------------------------------------------------ */
+
+.header-banner{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+}
+    .header-banner img{
+        width: 100%;
+    }
+    
+    .header-overlay{
+        height: 760px;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background: #303952;
+        z-index: 1;
+        opacity: .75;
+    }
+    
+    .header-content2{
+        z-index: 2;
+    }
+        .header-content2 h1{
+            font-size: 35px;
+            letter-spacing: 2px;
+            margin-top: 350px;
+            margin-left: 100px;
+        }
+    
+    .btn{
+        background: #2C4C7D;
+        color: #fff;
+        padding: 10px, 20px;
+        margin-left: 100px;
+        text-decoration: none;
+        transform: 5;
+    }
+        .btn:hover{
+            background: #669cc5;
+        }
