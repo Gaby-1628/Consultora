@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Agil Main</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"> 
     <script src="js/scrollreveal.js"></script>
-=======
     <title>Seleccion de Personal</title>
->>>>>>> 483b18b39665df73d474588a56cead3efe63c1b4
     <link rel="stylesheet" href="css/seleccion.css">
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -77,7 +74,31 @@
                     <a href="#" class="menu_link">Ofertas</a>
                 </li>
                 <li class="menu_item">
-                    <a href="#" class="menu_link">Contacto</a>
+                    <!-- <a href="#" class="menu_link" id="btn-abrir-popup">Contacto</a> -->
+                    <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
+
+                    <div class="overlay" id="overlay">
+                        <div class="popup" id="popup">
+                                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><strong>Contactate con Nosotros</strong></h3>
+                                <h4>Queremos Ayudarte</h4>
+                                <form id="form" action="contacto.php" method="post">
+                                    <div class="container-inputs">
+                                        <input type="text" name="nombre" placeholder="Nombre:">
+                                        <input type="text" name="email" placeholder="Email:">
+                                        <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                    </div>
+                                    <button>Enviar</button>
+                                    <div id="mensajes">
+                                        <span id="errNombre"></span>
+                                        <span id="errEmail"></span>
+                                        <span id="errConsulta"></span>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -135,5 +156,6 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 <script src="js/main.js"></script>
+                <script src="js/popup.js"></script>
 </body>
 </html>

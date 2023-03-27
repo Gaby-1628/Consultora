@@ -62,7 +62,31 @@
                         <a href="#" class="menu_link">Talleres</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#" class="menu_link">Contacto</a>
+                        <!-- <a href="#" class="menu_link" id="btn-abrir-popup">Contacto</a> -->
+                        <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
+
+                        <div class="overlay" id="overlay">
+                            <div class="popup" id="popup">
+                                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                    <h3><strong>Contactate con Nosotros</strong></h3>
+                                    <h4>Queremos Ayudarte</h4>
+                                    <form id="form" action="contacto.php" method="post">
+                                        <div class="container-inputs">
+                                            <input type="text" name="nombre" placeholder="Nombre:">
+                                            <input type="text" name="email" placeholder="Email:">
+                                            <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                        </div>
+                                        <button>Enviar</button>
+                                        <div id="mensajes">
+                                            <span id="errNombre"></span>
+                                            <span id="errEmail"></span>
+                                            <span id="errConsulta"></span>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -156,7 +180,7 @@
                     <a href="#" class="btn">Consultanos</a>
                 </div>
             </article>
-        <section id="contacto">
+        <!-- <section id="contacto">
             <form action="contacto.php" method="post">
                 <input type="text" name="nombre" placeholder="Nombre:">
                 <input type="text" name="email" placeholder="Email:">
@@ -168,7 +192,7 @@
                     <span id="errConsulta"></span>
                 </div>
             </form>
-        </section>
+        </section> -->
         <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
@@ -195,5 +219,6 @@
         </section>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 </html>
