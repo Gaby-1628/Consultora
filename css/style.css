@@ -184,15 +184,16 @@ header nav section h1{
         margin-top: 180px;
     }
 
-.btn{
+.header-content .btn{
     background: #2C4C7D;
     color: #fff;
     padding: 10px, 20px;
     text-decoration: none;
     transform: 5;
+    margin-left: 2px;
 }
-    .btn:hover{
-        background: #669cc5;
+   .header-content .btn:hover{
+        background: #3d66a3;
     }
 
 
