@@ -575,18 +575,87 @@ textarea{
 }
 
 footer{
-    width: 100%;
+    width: 1300px;
     height: 300px;
     background: #fff;
+    margin: auto;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 }
 #footer-content{
     width: 100%;
     height: 250px;
-    background: #14305B;
     margin-top: 90px;
 }
 
-#redes-sociales{
+#redes{
+    background-color: #ededed;
+    float: left;
+    width: 400px;
+    height: 275px;
+    color: #000000;
+    padding-top: 80px;
+}
+
+#redes h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#text{
+    background-color: #2C4C7D;
+    height: 275px;
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+#text h1{
+    display: flex;
+    justify-content: center;
+}
+
+#redes .fa-brands{
+    color: #000000;
+    margin-left: 20px;
+}
+
+#text a{
+    margin-left: 50px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+#redes .fa-linkedin{
+    float: right;
+    margin-right: 160px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#redes .fa-instagram{
+    padding-left: 130px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.fa-regular {
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+
+#text .fa-brands{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+
+ /* 
+ #redes-sociales{
     margin-left: 60px;
     display: inline-block;
 }
@@ -616,7 +685,7 @@ footer{
         padding: 20px;
     }
 
-
+*/
 
 /* ------------------------------------------------------------ */
 /* --------------------- Seccion TECNOLOGIAS ------------------ */
