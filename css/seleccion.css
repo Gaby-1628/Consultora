@@ -138,106 +138,18 @@ header nav section h1{
 #revelamiento p{
     margin-left: 40px;
     font-size: 25px;
-    padding-top: 50px;
+    padding-top: 120px;
 }
 
-#recruiting-{
-    background-color: #ffffff;
-    color: #14305B;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-    margin: auto;
+#revelamiento img{
+    float: right;
     margin-top: 100px;
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 400px;
+
 }
 
-#recruiting p{
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 50px;
-}
-
-#entrevistas-{
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    margin-left: 235px;
-    margin-top: 100px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-}
-
-#entrevistas p{
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 50px;
-}
-
-#Psicotécnicos-{
-    background-color: #ffffff;
-    color: #14305B;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    margin-left: 235px;
-    margin-top: 100px;
-    align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-    margin: auto;
-    margin-top: 100px;
-}
-
-#Psicotécnicos p{
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 50px;
-}
-
-#presentacion-{
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    margin-left: 235px;
-    margin-top: 100px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-}
-
-#presentacion p{
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 50px;
-}
-
-#proceso-{
-    background-color: #ffffff;
-    color: #14305B;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    margin-left: 235px;
-    margin-top: 100px;
-    align-items: center;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-    margin: auto;
-    margin-top: 100px;
-}
-
-#proceso p{
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 50px;
-}
 
 #info{
     text-align: center;
