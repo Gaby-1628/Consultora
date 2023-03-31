@@ -86,3 +86,9 @@ sr.reveal('#revelamiento- p', {
 });
 
 
+sr.reveal('#banner h1', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+

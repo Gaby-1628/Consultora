@@ -98,7 +98,7 @@ header nav section h1{
 }
 
 #banner{
-    height: 450px;
+    height: 600px;
     background:
         linear-gradient(rgba(69, 82, 95, 0.578),rgba(9, 21, 34, 0.832)),
         url(banner.jpeg);
@@ -112,11 +112,10 @@ header nav section h1{
 #banner h1{
     color: #fff;
     margin-left: 500px;
-    margin-top: 250px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 450px;
 }
 
 
@@ -143,10 +142,10 @@ header nav section h1{
 
 #revelamiento img{
     float: right;
-    margin-top: 100px;
-    margin-right: 20px;
+    margin-top: 73px;
+    margin-right: 40px;
     border-radius: 20px;
-    width: 400px;
+    width: 350px;
 
 }
 
