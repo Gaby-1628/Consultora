@@ -97,6 +97,13 @@ header nav section h1{
     background-color: #5e7094;
 }
 
+#logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+
 #banner{
     height: 600px;
     background:
