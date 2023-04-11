@@ -819,13 +819,19 @@ footer{
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */ 
 
-
+#body{
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    justify-content: center;
+    min-height: 100vh;
+    background: #343f4f;
+}
 #testi-{
     background-color: #ffffff;
     height: 300px;
     width: 1000px;
     margin: auto;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.6);
     border-radius: 20px;
     
 }
@@ -836,23 +842,143 @@ footer{
     font-size: 23px;
     margin-top: 80px;
     padding-top: 100px;
+    font-size: 27px;
+}
+ /*
+.wrapper{
+    max-width: 1200px;
+    position: relative;
 }
 
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transform: translate(-50%);
+}
+.wrapper i:first-child{
+    left: -23px;
+}
 
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-widt: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-widt: 520px){
+    .carousel img{
+        width: 100%
+    }
+}
+ */
+
+
+/*
 #testimonios{
     margin-top: 100px;
     background-color: #2C4C7D;
     height: 300px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
-    ;
+    width: 90%;
+    margin-bottom: 400px;
+    margin: 200px auto;
     
 
 }
 
 #logos-testimonios img{
 width: 200px;
-height: 200px;
+height: 100%;
 margin-top: 50px;
 padding-left: 10px;
 background-color: #2C4C7D;
+
+}  */
+   
+.carousel img{
+    width: 200px;
+    height: 200px;
 }
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;   
+  }
+
+.carousel button{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 900px;
+}
+
+  .carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+    margin-top: 20px;
+    
+    
+  }
+  .carousel-images img {
+    width: 30%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    margin-left: 10px;
+    border-radius: 8px;
+
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+
+
+  .carousel-button-prev {
+    left: 0;
+    padding-bottom: 170px;
+  }
+  .carousel-button-next {
+    right: 0;
+    padding-bottom: 180px;
+
+}  
