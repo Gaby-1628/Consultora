@@ -655,39 +655,7 @@ footer{
 
 
 
- /* 
- #redes-sociales{
-    margin-left: 60px;
-    display: inline-block;
-}
-    #redes-sociales a{
-    width: 20px;
-    height: 16px;
-    margin: 0px 20px;
-    padding: 22px;
-    display: inline-block;
-    color: #fff;
-    transition: 0.5s;
-}
-    #redes-sociales a:hover{
-        color: #567cb6
-    }
-    .fa-brands{
-        font-size: 24px;
-        margin: 8px;
-    }
-
-#text{
-    font-size: 20px;
-    color: #fff;
-}
-    #text h2{
-        margin-left: 60px;
-        padding: 20px;
-    }
-
-*/
-
+ 
 /* ------------------------------------------------------------ */
 /* --------------------- Seccion TECNOLOGIAS ------------------ */
 /* ------------------------------------------------------------ */
@@ -819,13 +787,8 @@ footer{
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */ 
 
-#body{
-    display: flex;
-    align-items: center;
-    padding: 0 35px;
-    justify-content: center;
-    min-height: 100vh;
-    background: #343f4f;
+#banner img{
+    width: 100%;    
 }
 #testi-{
     background-color: #ffffff;
@@ -844,84 +807,7 @@ footer{
     padding-top: 100px;
     font-size: 27px;
 }
- /*
-.wrapper{
-    max-width: 1200px;
-    position: relative;
-}
-
-.wrapper i{
-    top: 50%;
-    height: 46px;
-    width: 46px;
-    position: absolute;
-    text-align: center;
-    line-height: 46px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    background-color: #fff;
-    cursor: pointer;
-    transform: translate(-50%);
-}
-.wrapper i:first-child{
-    left: -23px;
-}
-
-.wrapper i:last-child{
-    right: -23px;
-}
-
-.wrapper .carousel{
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.carousel img{
-    height: 340px;
-    object-fit: cover;
-    margin-left: 14px;
-    width: calc(100% / 3);
-}
-
-.carousel img:first-child{
-    margin-left: 0px;
-}
-
-@media screen and (max-widt: 900px){
-    .carousel img{
-        width: calc(100% / 2);
-    }
-}
-@media screen and (max-widt: 520px){
-    .carousel img{
-        width: 100%
-    }
-}
- */
-
-
-/*
-#testimonios{
-    margin-top: 100px;
-    background-color: #2C4C7D;
-    height: 300px;
-    width: 90%;
-    margin-bottom: 400px;
-    margin: 200px auto;
-    
-
-}
-
-#logos-testimonios img{
-width: 200px;
-height: 100%;
-margin-top: 50px;
-padding-left: 10px;
-background-color: #2C4C7D;
-
-}  */
+ 
    
 .carousel img{
     width: 200px;
@@ -932,7 +818,7 @@ background-color: #2C4C7D;
     position: relative;
     overflow: hidden;
     width: 70%;
-    margin: auto;   
+    margin: 100px  auto;   
   }
 
 .carousel button{
