@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ */
+/* ------------------------ Quienes Somos --------------------- */
+/* ------------------------------------------------------------ */
+
+#equipo{
+    /* background-color: #e0cece; */
+    width: 100%;
+    float: left;
+    height: 600px;
+}
+
+.img-eqp img{
+    float: right;
+    width: 500px;
+    height: 600px;
+    margin-right: 50px;
+    /* margin-top: 50px; */
+}
+
+.txt{
+    width: 50%;
+    float: left;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.txt h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#logros{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+#logros p{
+    font-size: 10px;
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: 0px 47px;
+    text-align: center;
+}
+
+.fa-award,
+.fa-sitemap,
+.fa-chart-column,
+.fa-users{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}

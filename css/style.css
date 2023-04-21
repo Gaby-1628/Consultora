@@ -24,9 +24,6 @@ header nav section h1{
     height: 100px;
     display: flex;
 }
-.logo{
-    left: 0;
-}
 
 .menu{
     background-color: #fff;
@@ -574,6 +571,11 @@ textarea{
     background-color: #fff;
 }
 
+
+/* ------------------------------------------------------------ */
+/* ----------------------- Seccion Footer --------------------- */
+/* ------------------------------------------------------------ */
+
 footer{
     width: 100%;
     height: 300px;
@@ -591,6 +593,7 @@ footer{
     display: inline-block;
 }
     #redes-sociales a{
+    text-decoration: none;
     width: 20px;
     height: 16px;
     margin: 0px 20px;
@@ -602,7 +605,8 @@ footer{
     #redes-sociales a:hover{
         color: #567cb6
     }
-    .fa-brands{
+    .fa-brands,
+    .fa-at{
         font-size: 24px;
         margin: 8px;
     }
@@ -736,3 +740,20 @@ footer{
         .btn:hover{
             background: #669cc5;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
