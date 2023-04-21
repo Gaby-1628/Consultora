@@ -181,15 +181,16 @@ header nav section h1{
         margin-top: 180px;
     }
 
-.btn{
+.header-content .btn{
     background: #2C4C7D;
     color: #fff;
     padding: 10px, 20px;
     text-decoration: none;
     transform: 5;
+    margin-left: 2px;
 }
-    .btn:hover{
-        background: #669cc5;
+   .header-content .btn:hover{
+        background: #3d66a3;
     }
 
 
@@ -577,21 +578,27 @@ textarea{
 /* ------------------------------------------------------------ */
 
 footer{
-    width: 100%;
+    width: 1300px;
     height: 300px;
     background: #fff;
+    margin: auto;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 }
 #footer-content{
     width: 100%;
     height: 250px;
-    background: #14305B;
     margin-top: 90px;
 }
 
-#redes-sociales{
-    margin-left: 60px;
-    display: inline-block;
+#redes{
+    background-color: #ededed;
+    float: left;
+    width: 400px;
+    height: 275px;
+    color: #000000;
+    padding-top: 80px;
 }
+<<<<<<< HEAD
     #redes-sociales a{
     text-decoration: none;
     width: 20px;
@@ -610,18 +617,68 @@ footer{
         font-size: 24px;
         margin: 8px;
     }
+=======
+
+#redes h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+>>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
 
 #text{
-    font-size: 20px;
-    color: #fff;
+    background-color: #2C4C7D;
+    height: 275px;
+    color: #ffffff;
+    padding-top: 60px;
 }
-    #text h2{
-        margin-left: 60px;
-        padding: 20px;
-    }
+
+#text h1{
+    display: flex;
+    justify-content: center;
+}
+
+#redes .fa-brands{
+    color: #000000;
+    margin-left: 20px;
+}
+
+#text a{
+    margin-left: 50px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+#redes .fa-linkedin{
+    float: right;
+    margin-right: 160px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#redes .fa-instagram{
+    padding-left: 130px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.fa-regular {
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+
+#text .fa-brands{
+    margin-top: 50px;
+    margin-left: 100px;
+}
 
 
 
+ 
 /* ------------------------------------------------------------ */
 /* --------------------- Seccion TECNOLOGIAS ------------------ */
 /* ------------------------------------------------------------ */
@@ -742,6 +799,17 @@ footer{
         }
 
 
+<<<<<<< HEAD
+=======
+/* ------------------------------------------------------------ */
+/* ---------------------- QUIENES SOMOS ----------------------- */
+/* ------------------------------------------------------------ */        
+>>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
+
+
+
+
+<<<<<<< HEAD
 
 
 
@@ -753,7 +821,90 @@ footer{
 
 
 
+=======
+/* ------------------------------------------------------------ */
+/* ---------------------- TESTIMONIOS ------------------------- */
+/* ------------------------------------------------------------ */ 
+
+#banner img{
+    width: 100%;    
+}
+#testi-{
+    background-color: #ffffff;
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+#testi- p{
+    text-align: center;
+    color: #000000;
+    font-size: 23px;
+    margin-top: 80px;
+    padding-top: 100px;
+    font-size: 27px;
+}
+ 
+   
+.carousel img{
+    width: 200px;
+    height: 200px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 100px  auto;   
+  }
+
+.carousel button{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 900px;
+}
+
+  .carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+    margin-top: 20px;
+    
+    
+  }
+  .carousel-images img {
+    width: 30%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    margin-left: 10px;
+    border-radius: 8px;
+
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
 
 
 
+  .carousel-button-prev {
+    left: 0;
+    padding-bottom: 170px;
+  }
+  .carousel-button-next {
+    right: 0;
+    padding-bottom: 180px;
 
+}  
+>>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea

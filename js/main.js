@@ -72,28 +72,60 @@ sr.reveal('#revelamiento-', {
     origin: 'right',
     distance: '-100px'
 });
-sr.reveal(' #recruiting-', {
+
+sr.reveal('#revelamiento- img', {
     duration: 3000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '-100px'
 });
-sr.reveal('#entrevistas-', {
+
+sr.reveal('#revelamiento- p', {
     duration: 3000,
-    origin: 'right',
+    origin: 'top',
     distance: '-100px'
 });
-sr.reveal(' #Psicotécnicos-', {
+
+
+sr.reveal('#banner h1', {
     duration: 3000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '-100px'
 });
-sr.reveal('#presentacion-', {
+
+/* --------------------- TESTIMONIOS ------------------ */ 
+
+
+const carouselImages = document.querySelector(".carousel-images");
+const carouselPrevButton = document.querySelector(".carousel-button-prev");
+const carouselNextButton = document.querySelector(".carousel-button-next");
+let currentIndex = 0;
+
+carouselPrevButton.addEventListener("click", () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = carouselImages.children.length - 1;
+  }
+  carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+});
+
+carouselNextButton.addEventListener("click", () => {
+  currentIndex++;
+  if (currentIndex >= carouselImages.children.length) {
+    currentIndex = 0;
+  }
+  carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+});
+
+
+
+sr.reveal('#testi- p', {
     duration: 3000,
-    origin: 'right',
+    origin: 'bottom',
     distance: '-100px'
 });
-sr.reveal(' #proceso-', {
+
+sr.reveal('carousel', {
     duration: 3000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '-100px'
 });
