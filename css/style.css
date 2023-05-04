@@ -598,7 +598,7 @@ footer{
     color: #000000;
     padding-top: 80px;
 }
-<<<<<<< HEAD
+
     #redes-sociales a{
     text-decoration: none;
     width: 20px;
@@ -617,7 +617,7 @@ footer{
         font-size: 24px;
         margin: 8px;
     }
-=======
+
 
 #redes h3{
     font-size: 20px;
@@ -625,7 +625,6 @@ footer{
     justify-content: center;
     margin-top: 20px;
 }
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
 
 #text{
     background-color: #2C4C7D;
@@ -799,29 +798,17 @@ footer{
         }
 
 
-<<<<<<< HEAD
-=======
+
+
 /* ------------------------------------------------------------ */
 /* ---------------------- QUIENES SOMOS ----------------------- */
 /* ------------------------------------------------------------ */        
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
-
-
-
-
-<<<<<<< HEAD
 
 
 
 
 
 
-
-
-
-
-
-=======
 /* ------------------------------------------------------------ */
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */ 
@@ -907,4 +894,32 @@ footer{
     padding-bottom: 180px;
 
 }  
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
+
+
+#testimonios{
+    background-color: #14305B;
+    color: #fff;
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
+    
+}
+
+#testimonios p{
+    margin-left: 40px;
+    font-size: 25px;
+    padding-top: 120px;
+}
+
+#testimonios img{
+    float: right;
+    margin-top: 73px;
+    margin-right: 40px;
+    border-radius: 20px;
+    width: 350px;
+
+}
