@@ -189,7 +189,7 @@ header nav section h1{
     transform: 5;
     margin-left: 2px;
 }
-   .header-content .btn:hover{
+    .header-content .btn:hover{
         background: #3d66a3;
     }
 
@@ -598,26 +598,6 @@ footer{
     color: #000000;
     padding-top: 80px;
 }
-<<<<<<< HEAD
-    #redes-sociales a{
-    text-decoration: none;
-    width: 20px;
-    height: 16px;
-    margin: 0px 20px;
-    padding: 22px;
-    display: inline-block;
-    color: #fff;
-    transition: 0.5s;
-}
-    #redes-sociales a:hover{
-        color: #567cb6
-    }
-    .fa-brands,
-    .fa-at{
-        font-size: 24px;
-        margin: 8px;
-    }
-=======
 
 #redes h3{
     font-size: 20px;
@@ -625,7 +605,6 @@ footer{
     justify-content: center;
     margin-top: 20px;
 }
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
 
 #text{
     background-color: #2C4C7D;
@@ -678,7 +657,7 @@ footer{
 
 
 
- 
+
 /* ------------------------------------------------------------ */
 /* --------------------- Seccion TECNOLOGIAS ------------------ */
 /* ------------------------------------------------------------ */
@@ -798,30 +777,6 @@ footer{
             background: #669cc5;
         }
 
-
-<<<<<<< HEAD
-=======
-/* ------------------------------------------------------------ */
-/* ---------------------- QUIENES SOMOS ----------------------- */
-/* ------------------------------------------------------------ */        
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-=======
 /* ------------------------------------------------------------ */
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */ 
@@ -846,8 +801,8 @@ footer{
     padding-top: 100px;
     font-size: 27px;
 }
- 
-   
+
+
 .carousel img{
     width: 200px;
     height: 200px;
@@ -858,15 +813,15 @@ footer{
     overflow: hidden;
     width: 70%;
     margin: 100px  auto;   
-  }
-
-.carousel button{
-  width: 50px;
-  height: 50px;
-  margin-bottom: 900px;
 }
 
-  .carousel-images {
+.carousel button{
+width: 50px;
+height: 50px;
+margin-bottom: 900px;
+}
+
+.carousel-images {
     display: flex;
     width: 100%;
     transition: transform 0.3s ease-in-out;
@@ -874,15 +829,15 @@ footer{
     margin-top: 20px;
     
     
-  }
-  .carousel-images img {
+}
+.carousel-images img {
     width: 30%;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     margin-left: 10px;
     border-radius: 8px;
 
-  }
-  .carousel-button {
+}
+.carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -894,17 +849,16 @@ footer{
     border-radius: 50%;
     height: 50px;
     width: 50px;
-  }
+}
 
 
 
-  .carousel-button-prev {
+.carousel-button-prev {
     left: 0;
     padding-bottom: 170px;
-  }
-  .carousel-button-next {
+}
+.carousel-button-next {
     right: 0;
     padding-bottom: 180px;
 
 }  
->>>>>>> 6e9caf146986515b98fa129093c7be57983b0fea
