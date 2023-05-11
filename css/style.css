@@ -119,7 +119,79 @@ header nav section h1 {
     background-color: #5e7094;
 }
 
+.menu_hamburger {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
 
+.menu_img {
+    display: block;
+    width: 36px;
+}
+
+/* ------------------------------------------------------------ */
+/* ---------------------- MENU RESPONSIVE --------------------- */
+/* ------------------------------------------------------------ */
+
+@media (max-width: 800px) {
+    .menu_hamburger {
+        display: flex;
+    }
+    .menu_item{
+        --clip: 0;
+        overflow: hidden;
+    }
+    .menu_item--active {
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+    .menu_item--show {
+        background-color: var(--background);
+    }
+    .menu_links {
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+    .menu_links--show {
+        transform: unset;
+        width: 100%;
+    }
+    .menu_link {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+    .fa-solid {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .menu_nesting, .menu_nesting2 {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+    .menu_link--inside {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #5e7094;
+    }
+}
 
 /* #banner{
     height: 600px;
@@ -177,13 +249,13 @@ header nav section h1 {
 }
 
 .header-content {
+    width: 800px;
     z-index: 2;
 }
 
 .header-content h1 {
     font-size: 35px;
     letter-spacing: 2px;
-    margin-top: 180px;
 }
 
 .header-content .btn {
@@ -236,14 +308,58 @@ header nav section h1 {
 
 .header-serv {
     z-index: 2;
+    text-align: center;
+    margin: auto;
 }
 
 .header-serv h1 {
     font-size: 60px;
     letter-spacing: 2px;
-    margin-top: 240px;
-    margin-left: 550px;
 }
+
+
+/* ------------------------------------------------------------ */
+/* --------------------- HEADER RESPONSIVE -------------------- */
+/* ------------------------------------------------------------ */
+
+@media (max-width: 800px) {
+    .header, .content {
+        display: flex;
+        text-align: center;
+    }
+    .header-video, .banner {
+        max-width: 800px;
+        width: 100%;
+    }
+    .header-overlay, .banner-overlay{
+        display: none;
+    }
+    .header-content h1 {
+        max-width: 500px;
+        width: 340px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: rgba(48, 57, 82, 0.807);
+        transform: translateY(-200%);
+    }
+    .header-content .btn {
+        transform: translateY(-380%);
+    }
+    .header-serv h1 {
+        font-weight: bold;
+        font-size: 50px;
+        background-color: rgba(48, 57, 82, 0.807);
+        transform: translateY(-120%);
+    }
+    #carouselExampleSlidesOnly img {
+        height: 300px;
+    }
+
+    footer {
+        display: none;
+    }
+} 
+
 
 #vision {
     background-color: #2C4C7D;
@@ -267,20 +383,19 @@ header nav section h1 {
     height: 400px;
 }
 
-#vision-texto h1 {
+#vision-texto h2 {
     color: #fff;
     text-align: right;
-    margin-top: 60px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-right: 90px;
+    margin-bottom: 20px;
 }
 
 #vision-texto p {
     color: #fff;
     text-align: right;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 250px;
+    width: 50%;
 }
 
 
@@ -303,34 +418,38 @@ header nav section h1 {
     height: 400px;
 }
 
-#valores-texto h1 {
-    color: #2C4C7D;
-    margin-top: 60px;
-    margin-left: 50px;
+#valores-texto h2 {
+    color: #201d4b;
+    margin-top: 120px;
+    margin-left: 100px;
     margin-bottom: 40px;
 }
 
 #valores-texto p {
-    color: #000000;
-    margin-left: 50px;
+    color: #16172f;
+    margin-left: 100px;
+    width: 50%;
 }
 
 #mision {
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: 260px;
 }
 
-#mision h1 {
+#mision h2 {
     text-align: center;
     margin-top: 160px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin-bottom: 70px;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 #mision p {
+    width: 40%;
     text-align: center;
+    margin: auto;
+    font-weight: 300;
 }
 
 /* ------------------------------------------------------------ */

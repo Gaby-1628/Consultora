@@ -1,43 +1,97 @@
 window.sr = ScrollReveal();
-    
-    sr.reveal('#mision', {
-        duration: 3000,
-        origin: 'bottom',
-        distance: '-100px'
+
+sr.reveal('#mision', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
+sr.reveal('#vision-texto', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});
+
+sr.reveal('#valores-texto', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+
+sr.reveal('#footer-content', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-100px'
+});
+
+// sr.reveal('#contacto', {
+//     duration: 3000,
+//     origin: 'top',
+//     distance: '-100px'
+// });
+
+/* ------------------------------------------------------------ */
+/* ---------------------- MENU RESPONSIVE --------------------- */
+/* ------------------------------------------------------------ */
+
+
+(function() {
+    const listElements = document.querySelectorAll('.menu_item--show');
+    const list = document.querySelector('.menu_links');
+    const menu = document.querySelector('.menu_hamburger');
+
+    const addClick = () => {
+        listElements.forEach(element => {
+            element.addEventListener('click', () => {
+                let submenu = element.children[1]
+                let height = 0;
+
+                element.classList.toggle('menu_item--active')
+
+                if(submenu.clientHeight === 0) {
+                    height = submenu.scrollHeight
+                }
+                submenu.style.height = `${height}px`
+            })
+        })
+    }
+
+    const deleteStyleHeight = () => {
+        listElements.forEach(element => {
+            if(element.children[1].getAttribute('style')) {
+                element.children[1].removeAttribute('style')
+                element.classList.remove('menu_item--active')
+            }
+        })
+    }
+
+    window.addEventListener('resize', () => {
+        if(window.innerWidth > 800) {
+            deleteStyleHeight();
+            if(list.classList.contains('menu_links--show'))
+            list.classList.remove('menu_links--show')
+        } else {
+            addClick();
+        }
     });
 
-    sr.reveal('#vision-texto', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-100px'
-    });
+    if(window.innerWidth <= 800) {
+        addClick()
+    }
 
-    sr.reveal('#valores-texto', {
-        duration: 3000,
-        origin: 'right',
-        distance: '-100px'
-    });
+    menu.addEventListener('click', () => list.classList.toggle('menu_links--show'))
 
-    sr.reveal('#footer-content', {
-        duration: 3000,
-        origin: 'top',
-        distance: '-100px'
-    });
+})();
 
-    // sr.reveal('#contacto', {
-    //     duration: 3000,
-    //     origin: 'top',
-    //     distance: '-100px'
-    // });
 
 
 /* --------------------- Seccion TECNOLOGIAS ------------------ */
 
-    sr.reveal('#tcn', {
-        duration: 3000,
-        origin: 'bottom',
-        distance: '-100px'
-    });
+sr.reveal('#tcn', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+});
 
 
 /* --------------------- Seccion INDIVIDUOS ------------------ */
@@ -59,7 +113,7 @@ sr.reveal('.img', {
     distance: '-100px'
 });
 
-/* --------------------- Seccion SELECCION DE PERSONAL ------------------ */    
+/* --------------------- Seccion SELECCION DE PERSONAL ------------------ */
 
 sr.reveal('#info', {
     duration: 3000,
@@ -92,7 +146,7 @@ sr.reveal('#banner h1', {
     distance: '-100px'
 });
 
-/* --------------------- TESTIMONIOS ------------------ */ 
+/* --------------------- TESTIMONIOS ------------------ */
 
 
 const carouselImages = document.querySelector(".carousel-images");
@@ -101,19 +155,19 @@ const carouselNextButton = document.querySelector(".carousel-button-next");
 let currentIndex = 0;
 
 carouselPrevButton.addEventListener("click", () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = carouselImages.children.length - 1;
-  }
-  carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = carouselImages.children.length - 1;
+    }
+    carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
 });
 
 carouselNextButton.addEventListener("click", () => {
-  currentIndex++;
-  if (currentIndex >= carouselImages.children.length) {
-    currentIndex = 0;
-  }
-  carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    currentIndex++;
+    if (currentIndex >= carouselImages.children.length) {
+        currentIndex = 0;
+    }
+    carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
 });
 
 
