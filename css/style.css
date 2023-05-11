@@ -335,24 +335,25 @@ header nav section h1 {
         display: none;
     }
     .header-content h1 {
-        max-width: 500px;
-        width: 340px;
+        max-width: 400px;
+        width: 240px;
         font-weight: bold;
         font-size: 20px;
         background-color: rgba(48, 57, 82, 0.807);
         transform: translateY(-200%);
     }
     .header-content .btn {
-        transform: translateY(-380%);
+        transform: translateY(-480%);
+        text-align: center;
     }
     .header-serv h1 {
         font-weight: bold;
-        font-size: 50px;
+        font-size: 40px;
         background-color: rgba(48, 57, 82, 0.807);
-        transform: translateY(-120%);
+        transform: translateY(-160%);
     }
     #carouselExampleSlidesOnly img {
-        height: 300px;
+        height: 200px;
     }
     #vision , #valores-vision {
         display: none;

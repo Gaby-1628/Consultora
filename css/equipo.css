@@ -208,25 +208,8 @@ header .subtitulo {
 /* ------------------------------------------------------------ */
 
 @media (max-width: 800px) {
-    .titulo, .subtitulo {
-        width: 340px;
-        background-color: rgba(69, 29, 88, 0.364);
-        transform: translateX(-15%);
-    }
-    .textos .titulo {
-        max-width: 400px;
-        font-weight: bold;
-        font-size: 50px;
-        transform: translateY(-80%);
-    }
-    .textos .subtitulo {
-        max-width: 400px;
-        font-weight: bold;
-        font-size: 20px;
-        transform: translateY(-200%);
-    }
-    .textos .btn {
-        transform: translateY(-150%);
+    .textos, .titulo, .subtitulo, .btn {
+        display: none;
     }
 
     .img, .img-eqp, .img-eqp2 {
@@ -242,7 +225,7 @@ header .subtitulo {
     .abaut p {
         text-align: justify;
         font-size: 12px;
-        transform: translateX(-20%);
+        transform: translateX(-30%);
     }
 
     .eqp, .eqp2 {
@@ -250,7 +233,7 @@ header .subtitulo {
     }
     .txt p{
         font-size: 12px;
-        width: 380px;
+        width: 300px;
         transform: translateX(56%);
     }
     .txt h2 {
@@ -258,11 +241,11 @@ header .subtitulo {
     }
     .txt2 {
         font-size: 12px;
-        width: 480px;
+        width: 400px;
         margin-left: 50px;
     }
     .txt2 h2, .txt2 p {
-        transform: translateY(-320px);
+        transform: translateY(-250px);
     }
 
     .txt h2, .txt2 h2 {
@@ -284,12 +267,12 @@ header .subtitulo {
     }
 
     .empresas h3 {
-        font-size: 20px;
-        transform: translateY(-100%);
+        font-size: 16px;
+        transform: translateY(-90%);
     }
 
     .slaider, .slaide-track {
-        transform: translateY(-1240%);
+        transform: translateY(-1120%);
     }
     .slaider .slaide {
         width: 100px;
