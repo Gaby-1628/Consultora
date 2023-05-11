@@ -354,7 +354,9 @@ header nav section h1 {
     #carouselExampleSlidesOnly img {
         height: 300px;
     }
-
+    #vision , #mision, #valores {
+        display: none;
+    }
     footer {
         display: none;
     }
