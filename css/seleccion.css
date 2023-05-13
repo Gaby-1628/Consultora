@@ -138,7 +138,7 @@ header nav section h1{
     margin: auto;
     margin-top: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-    margin-bottom: 200px;
+    margin-bottom: 200px ;
 }
 
 #revelamiento p{
@@ -192,9 +192,28 @@ header nav section h1{
     background-color: #fff;
 }
 
+#selec h1{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#selec p{
+    margin-left: 50px;
+}
+
+
+#selec li{
+    margin-left: 53px;
+    margin-top: 5px;
+}
+
+#par{
+    font-size: 20px;
+}
 
 #empresas h1{
     margin-left: 50px;
+    margin-top: 80px;
 }
 
 #empresas p{
@@ -203,8 +222,16 @@ header nav section h1{
 
 #empresas h4{
     margin-left: 50px;
+    margin-top: 20px;
 }
 
 #empresas li{
     margin-left: 53px;
+    margin-top: 5px;
 }
+
+#empresass{
+    color: #0f3368;
+    margin-left: ;
+}
+
