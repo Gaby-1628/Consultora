@@ -183,3 +183,16 @@ sr.reveal('carousel', {
     origin: 'bottom',
     distance: '-100px'
 });
+
+/*----------SECCION EMPRESAS------- */
+
+sr.reveal('#empresass', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
+sr.reveal('#empresas', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});

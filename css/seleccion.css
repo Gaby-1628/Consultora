@@ -239,6 +239,7 @@ header nav section h1{
     float: left;
     width: 50%;
     height: 500px;
+    border-radius: 10px;
 }
 
 #empresas{
@@ -251,6 +252,7 @@ header nav section h1{
 #capac{
     padding: 70px;
     color: #14305B;
+    
 }
 
 
@@ -258,7 +260,7 @@ header nav section h1{
     float: left;
     width: 50%;
     height: 500px;
-    padding-left: 50px
+    padding-left: 50px;
 }
 
 #ej{
@@ -271,5 +273,4 @@ header nav section h1{
 #capa{
     color: #14305B;
     text-align: center;
-    
 }
