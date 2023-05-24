@@ -9,7 +9,7 @@
     $consulta .= "Su email es: " .$email  . ",\r\n";
     $consulta .= "Mensaje: " . $_POST['mensaje'] . ",\r\n";
 
-    $para = 'aca va el mail';
+    $para = 'nahuel-schmidt@live.com.ar';
     $asunto = 'Este mail fue enviado desde la web de AgilMains'
 
     mail($para, $asunto, utf8_decode($consulta), $header);

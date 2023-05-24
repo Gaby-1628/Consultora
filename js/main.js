@@ -146,7 +146,7 @@ sr.reveal('#banner h1', {
     distance: '-100px'
 });
 
-/* --------------------- TESTIMONIOS ------------------ */
+/* --------------------- TESTIMONIOS ------------------ 
 
 
 const carouselImages = document.querySelector(".carousel-images");
@@ -169,7 +169,7 @@ carouselNextButton.addEventListener("click", () => {
     }
     carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
 });
-
+*/
 
 
 sr.reveal('#testi- p', {
@@ -184,15 +184,3 @@ sr.reveal('carousel', {
     distance: '-100px'
 });
 
-/*----------SECCION EMPRESAS------- */
-
-sr.reveal('#empresass', {
-    duration: 3000,
-    origin: 'right',
-    distance: '-100px'
-});
-sr.reveal('#empresas', {
-    duration: 3000,
-    origin: 'left',
-    distance: '-100px'
-});
