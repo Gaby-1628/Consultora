@@ -1,22 +1,19 @@
 <?php
     
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $consulta = $_POST['consulta'];
-
-
-    $consulta = "Este mensaje fue enviado por" . $nombre . ",\r\n";
-    $consulta .= "Su email es: " .$email  . ",\r\n";
-    $consulta .= "Mensaje: " . $_POST['mensaje'] . ",\r\n";
-
-    $para = 'nahuel-schmidt@live.com.ar';
-    $asunto = 'Este mail fue enviado desde la web de AgilMains'
-
-    mail($para, $asunto, utf8_decode($consulta), $header);
-
-    header('Location.index.html');
-    
-    
+if (isset($_POST['enviar'])){
+    if (!empty($_POST{'name'}) && !empty($_POST['consulta']) && !empty($_POST['email'])){
+        $name = $_POST['name'];
+        $consulta = $_POST['consulta'];
+        $email = $_POST['email'];
+        $header.= "from: nahuel-schmidt@live.com.ar" . "\r\n";
+        $header.= "Reply-to: nahuel-schmidt@live.com.ar" . "\r\n";
+        $header.= "X-Mailer: PHP/". phpversion();
+        $email = @email($email,$consulta,$header);
+        if ($email) {
+            echo "<h4> Mail enviado exitosamente!</h4>";
+        }
+    }
+}
 
 
 ?>
