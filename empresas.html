@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,134 +8,208 @@
     <title></title>
     <link rel="stylesheet" href="css/seleccion.css">
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccion de Personal</title>
-    <link rel="stylesheet" href="css/seleccion-personal.css">
-</head>
-<body>
-    <header>
-    <nav class="menu">
-        <section class="menu_container">
-            <ul class="menu_links">
-                <li class="menu_item">
-                    <a href="index.html" class="menu_link">Inicio</a>
-                </li>
-                <li class="menu_item menu_item--show">
-                    <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="menu_nesting">
-                        <li>
-                            <a href="#" class="menu_link menu_link--inside">Empresas</a>
-                            <!-- <ul class="menu_nesting">
-                                <li class="menu_item"><a href="#" class="menu_link menu_link--inside">Capacitaciones</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link menu_link--inside">Seleccion de Personal</a></li>
-                            </ul> -->
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agile Minds</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/seleccion.css">
+        <script src="js/scrollreveal.js"></script>
+        <link rel="stylesheet" href="php/contacto.php">
+    </head>
+
+    <body>
+        <header>
+            <nav class="menu">
+                <section class="menu_container">
+                    <img src="Img/logo.jpeg" alt="" id="logo">
+                    <ul class="menu_links">
+                        <li class="menu_item">
+                            <a href="index.html" class="menu_link">Inicio</a>
                         </li>
-                        <li>
-                            <a href="tecnologias.html" class="menu_link menu_link--inside">Tecnologias</a>
-                            <!-- <ul class="menu_nesting">
-                                <li class="menu_item"><a href="#" class="menu_link menu_link--inside">Creacion de <br> Paginas Webs</a></li>
-                                <li class="menu_item"><a href="#" class="menu_link menu_link--inside">Marketing <br> Digital</a></li>
-                            </ul> -->
+                        <li class="menu_item menu_item--show">
+                            <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="menu_nesting">
+                                <li>
+                                    <a href="seleccion.html" class="menu_link menu_link--inside">Empresas</a>
+                                </li>
+                                <li>
+                                    <a href="individuos.html" class="menu_link menu_link--inside">Individuos</a>
+                                </li>
+                                <li>
+                                    <a href="tecnologias.html" class="menu_link menu_link--inside">Tecnologias</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="individuos.html" class="menu_link menu_link--inside">Individuos</a>
+                        <li class="menu_item menu_item--show">
+                            <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="menu_nesting2">
+                                <li>
+                                    <a href="nosotros.html" class="menu_link menu_link--inside">Quienes Somos</a>
+                                </li>
+                                <li>
+                                    <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="menu_item">
+                            <a href="/" class="menu_link">Ofertas</a>
+                        </li> -->
+                        <li class="menu_item">
+                            <a href="#" class="menu_link">Talleres</a>
+                        </li>
+                        <li class="menu_item">
+                            <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
+
+                            <div class="overlay" id="overlay">
+                                <div class="popup" id="popup">
+                                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                    <h3><strong>Contactate con Nosotros</strong></h3>
+                                    <h4>Queremos Ayudarte</h4>
+                                    <form id="form" action="contacto.php" method="post">
+                                        <div class="container-inputs">
+                                            <input type="text" name="nombre" placeholder="Nombre:">
+                                            <input type="text" name="email" placeholder="Email:">
+                                            <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                        </div>
+                                        <button>Enviar</button>
+                                        <div id="mensajes">
+                                            <span id="errNombre"></span>
+                                            <span id="errEmail"></span>
+                                            <span id="errConsulta"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                </li>
-                <li class="menu_item menu_item--show">
-                    <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="menu_nesting">
-                        <li>
-                            <a href="nosotros.html" class="menu_link menu_link--inside">Quienes Somos</a>
-                        </li>
-                        <li>
-                            <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
+                    <div class="menu_hamburger">
+                        <img src="Img/menu.svg" class="menu_img">
+                    </div>
+                </section>
+            </nav>
+            <section id="banner">
+                <h1>Nuestros <strong>Servicios</strong></h1>
+            </section>
+        </header>
+        <main>
+            <section id="empresass">
+                <div id="selec">
+                    <h1> Seleccion de Personal</h1>
+                    <p id="par"> El objetivo es reclutar y seleccionar al personal más idóneo para su empresa, teniendo
+                        en cuenta la cultura organizacional y los requerimientos excluyentes, no excluyentes y deseables
+                        para cada posición.
+                    </p>
+                    <ul>
+                        <li>Elaboración y publicación de anuncios de empleo</li>
+                        <li>Reclutamiento de candidatos</li>
+                        <li>Assessment Center y entrevistas individuales</li>
+                        <li>Coordinación de exámenes preocupacionales</li>
+                        <li>Acompañamiento en onboarding (Adaptación del empleado en el primer período de trabajo, 3
+                            meses)</li>
+                    </ul>
+                </div>
+
+                <div id="empresas">
+                    <h1>Evaluaciones Psicolaborales</h1>
+                    <p id="par">Las evaluaciones se aplican usaualmente en 3 ocaciones.</p>
+                    <ol>
+                        <li>Contratación: Los test psicotécnicos son pruebas estandarizadas, que sirven para medir
+                            conductas, capacidades y habilidades de un candidato o candidata ante una posible
+                            contratación.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint minima et,
+                            necessitatibus, beatae, ad placeat atque voluptas illum odit facere libero ipsa architecto
+                            harum alias nemo reprehenderit autem minus.</li>
+                        <li>Revisiones anuales para puestos operativos: Su realización es indispensable para conocer si
+                            sus funciones cognitivas se encuentran conservadas ante el manejo de maquinaria peligrosa o
+                            trabajos que impliquen gran atención.</li>
+                    </ol>
+                </div>
+            </section>
+            <section id="capac">
+                <div id="cap">
+                    <h1>Capacitacion</h1>
+                    <p id="par">El proceso se lleva a cabo a partir del relevamiento de necesidades de cada compañía, a
+                        través de entrevistas/encuestas se muestra en datos cuantitativos y cualitativos las
+                        competencias técnicas y conductuales que son requeridas para mejorar la eficiencia de la
+                        organización. A partir de la información recolectada se brinda un esquema de capacitación
+                        sugerido por profesionales calificados de Recursos Humanos.
+                    </p>
+                    <h4>Descripción del proceso:</h4>
+                    <ul>
+                        <li>Diagnostico</li>
+                        <li>Informe de necesidades detectadas</li>
+                        <li>Plan de capacitación</li>
+                        <li>Ejecución</li>
+                        <li>Seguimiento de impacto (Entrevistas/encuestas de seguimiento)
                         </li>
                     </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#" class="menu_link">Ofertas</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#" class="menu_link">Contacto</a>
-                </li>
-            </ul>
-            <div class="menu_hamburger">
-                <img src="Img/menu.svg" class="menu_img">
-            </div>
-        </section>
-    </nav>
-        <section id="banner">
-                <h1>Seleccion de Personal</h1>
-        </section>
+                </div>
+                <div id="ej">
+                    <h4>Ejemplos de abordajes mas destacados e importantes en la actualidad:</h4>
+                    <ul>
+                        <li>Optimización de la eficiencia en el trabajo</li>
+                        <li>Herramientas de organización laboral</li>
+                        <li>metodologías ágiles</li>
+                        <li>Estandarización de procesos administrativos </li>
+                        <li>Gestión del desempeño</li>
+                        <li>Habilidades socioemocionales</li>
+                        <li>Estrategias de motivación organizacional</li>
+                        <li>Orientación al cliente interno y externo</li>
+                        <li>Comunicación asertiva</li>
+                        <li>Mindfulness (Sesiones de reducción de estrés)</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="coaching">
+                <div id="capa">
+                    <p id="par">El coaching de liderazgo es necesario para quienes tienen colaboradores a cargo. A
+                        través de distintas técnicas el coach ayuda al coachee a reconocer las fortalezas, aspectos de
+                        mejora y motivaciones de los miembros del equipo para ayudar a cada individuo a mejorar, así
+                        como también a él mismo desarrollando sus habilidades de liderazgo. De ésta forma los equipos se
+                        volverán más eficientes y orientados a resultados.
+                    </p>
+                </div>
+            </section>
+        </main>
 
-        <section id="revelamiento-">
-            <div id="revelamiento">
-                <p>• Relevamiento de necesidades                         
-                    </p>
-                    <img src="" alt="">
-            </div>
-        </section>
-        <section id="recruiting-">
-            <div id="recruiting">
-                <p>• Recruiting                          
-                    </p>
-                    <img src="" alt="">
-            </div>
-        </section>
-        <section id="entrevistas-">
-            <div id="entrevistas">
-                <p>• Entrevistas individuales & grupales                             
-                    </p>
-                    <img src="" alt="">
-            </div>
-        </section>
-        <section id="Psicotécnicos-">
-            <div id="Psicotécnicos">
-                <p>•       Psicotécnicos                  
-                    </p>
-                    <img src="" alt="">
-            </div>
-        </section>
-        <section id="presentacion-">
-            <div id="presentacion">
-                <p>• Presentacion de candidatos    
-                    </p>
-                    <img src="" alt="">
-            </div>
-        </section>
-        <section id="proceso-">
-            <div id="proceso">
-                <p>• Acompañamiento en el proceso de onboarding             
-                    </p>
 
-                    <footer>
-                        <section id="footer-content">
-                            <div id="redes">
-                                <h3>Seguinos en nuestras redes</h3>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <div id="text">
-                                <h1>Agile Minds</h1>
-                                <a href="#">
-                                    <i class="fa-brands fa-whatsapp"> 3489500063 </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-regular fa-envelope">  ejemplo@gmail.com </i>
-                                </a>
-                            </div>
-                        </section>
-                    </footer>
-</body>
-</html>
+        <footer>
+            <section id="footer-content">
+                <div id="redes">
+                    <h3>Seguinos en nuestras redes</h3>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div id="text">
+                    <h1>Agile Minds</h1>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"> 3489500063 </i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"> ejemplo@gmail.com </i>
+                    </a>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/popup.js"></script>
+    </body>
+
+    </html>

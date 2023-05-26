@@ -126,8 +126,6 @@ header nav section h1{
 }
 
 
-
-
 #revelamiento{
     background-color: #14305B;
     color: #fff;
@@ -267,6 +265,7 @@ header nav section h1{
     float: right;
     width: 50%;
     height: 500px;
+    margin-top: 50px;
     padding-left: 50px;
 }
 
