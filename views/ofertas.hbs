@@ -1,0 +1,77 @@
+<header>
+    <section class="header">
+        <div class="container-title">
+            <h2 class="title">
+                AGILE MINDS
+                <a href="/create" class="btn-c">...</a>
+            </h2>
+            <h3 class="sub-title">
+                AGILIDAD Y EXCELENCIA
+            </h3>
+        </div>
+        <div class="banner-o">
+            <img src="img/banner.jpeg" alt="">
+        </div>
+    </section>
+</header>
+
+<section class="main">
+    <article class="txt">
+        <h2>AgileMinds</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, obcaecati? Velit et mollitia consectetur
+            doloremque. Alias iusto cum eum quisquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id perferendis quibusdam ut quia quaerat
+            officia est harum beatae possimus.
+        </p>
+    </article>
+    <div>
+        {{#each ofertas}}
+        <div class="div">
+            <h4>{{this.title}}</h4>
+            <a class="btn-show" href="/show/{{this._id}}">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div>
+        <div class="img-o">
+            <img src="/img/office.jpg" alt="">
+        </div>
+        <td>
+            <a class="btn-e" href="/edit/{{this._id}}">agile</a>
+            <form class="d-inline" action="/remove/{{this._id}}?_method=DELETE" method="post">
+                <button class="btn-r">minds</button>
+            </form>
+        </td>
+        {{/each}}
+    </div>
+</section>
+
+
+
+
+
+
+{{!-- <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Titulo</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each ofertas}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.fecha}}</td>
+            <td>
+                <a class="btn btn-info" href="/show/{{this._id}}">Ver...</a>
+                <a class="btn btn-warning" href="/edit/{{this._id}}">Editar</a>
+                <form class="d-inline" action="/remove/{{this._id}}?_method=DELETE" method="post">
+                    <button class="btn btn-danger">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table> --}}

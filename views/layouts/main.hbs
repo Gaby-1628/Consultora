@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/empresas.css">
+    <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="/php/contacto.php">
+    <title>Agile Minds</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu_container">
+                <img src="/img/logo.jpeg" alt="" id="logo">
+                <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="/" class="menu_link">Inicio</a>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting">
+                            <li>
+                                <a href="/empresas" class="menu_link menu_link--inside">Empresas</a>
+                            </li>
+                            <li>
+                                <a href="/individuos" class="menu_link menu_link--inside">Individuos</a>
+                            </li>
+                            <li>
+                                <a href="/tecnologia" class="menu_link menu_link--inside">Tecnologias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting2">
+                            <li>
+                                <a href="/nosotros" class="menu_link menu_link--inside">Quienes Somos</a>
+                            </li>
+                            <li>
+                                <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item">
+                        <a href="/ofertas" class="menu_link">Ofertas</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">Talleres</a>
+                    </li>
+                    <li class="menu_item">
+                        {{!-- <a href="#" class="menu_link" id="btn-abrir-popup">Contacto</a> --}}
+                        <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
+
+                        <div class="overlay" id="overlay">
+                            <div class="popup" id="popup">
+                                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><strong>Contactate con Nosotros</strong></h3>
+                                <h4>Queremos Ayudarte</h4>
+                                <form id="form" action="contacto.php" method="post">
+                                    <div class="container-inputs">
+                                        <input type="text" name="nombre" placeholder="Nombre:">
+                                        <input type="text" name="email" placeholder="Email:">
+                                        <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                    </div>
+                                    <button>Enviar</button>
+                                    <div id="mensajes">
+                                        <span id="errNombre"></span>
+                                        <span id="errEmail"></span>
+                                        <span id="errConsulta"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu_hamburger">
+                    <img src="Img/menu.svg" class="menu_img">
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    {{{body}}}
+
+    {{{footer}}}
+
+    <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#" class="btn-linkedin">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/carusel.js"></script>
+</body>
+
+</html>

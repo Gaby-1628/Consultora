@@ -1,0 +1,17 @@
+
+
+<form style="margin-top: 180px;" action="/update/{{_id}}?_method=PUT" method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Titulo</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{title}}" placeholder="Ingrese titulo">
+    </div>
+    <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha</label>
+        <input type="text" class="form-control" id="fecha" name="fecha" value="{{fecha}}" placeholder="Ingrese fecha">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Ingrese la descripcion del puesto">
+    </div>
+    <button class="btn btn-warning">Editar</button>
+</form>

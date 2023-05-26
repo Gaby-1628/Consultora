@@ -1,15 +1,12 @@
-/* ------------------------------------------------------------ */
-/* ------------------------ Quienes Somos --------------------- */
-/* ------------------------------------------------------------ */
-
 header .textos {
     z-index: 2;
     text-align: center;
     margin: auto;
 }
 
-header .titulo {
+header .titulo h1 {
     font-size: 85px;
+    font-weight: bold;
 }
 
 header .subtitulo {
@@ -91,8 +88,6 @@ header .subtitulo {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #451d58;
-    background-color: #c8aad6;
 }
 
 .abaut h2 {
