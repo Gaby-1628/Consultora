@@ -35,6 +35,7 @@ header .boton {
     text-align: center;
     text-decoration: none;
     border-radius: 16px;
+    transition: .5;
 }
 
 .sesgo-abajo {
@@ -100,6 +101,12 @@ header .boton {
     text-decoration: none;
     border-radius: 16px;
     margin-top: 24px;
+}
+
+.boton:hover {
+    font-weight: bold;
+    background-color: rgba(77, 94, 161, 0.855);
+    border: 0;
 }
 
 .gallery {
