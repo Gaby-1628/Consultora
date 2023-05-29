@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Minds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/talleres.css">
+    <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="php/contacto.php">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu_container">
+                <img src="Img/logo.jpeg" alt="" id="logo">
+                <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="index.html" class="menu_link">Inicio</a>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting">
+                            <li>
+                                <a href="seleccion.html" class="menu_link menu_link--inside">Empresas</a>
+                            </li>
+                            <li>
+                                <a href="individuos.html" class="menu_link menu_link--inside">Individuos</a>
+                            </li>
+                            <li>
+                                <a href="tecnologias.html" class="menu_link menu_link--inside">Tecnología</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting2">
+                            <li>
+                                <a href="nosotros.html" class="menu_link menu_link--inside">Quienes Somos</a>
+                            </li>
+                            <li>
+                                <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="menu_item">
+                        <a href="/" class="menu_link">Ofertas</a>
+                    </li> -->
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">Talleres</a>
+                    </li>
+                    <li class="menu_item">
+                        <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
+
+                        <div class="overlay" id="overlay">
+                            <div class="popup" id="popup">
+                                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><strong>Contactate con Nosotros</strong></h3>
+                                <h4>Queremos Ayudarte</h4>
+                                <form id="form" action="https://formsubmit.co/nahuel-schmidt@live.com.ar" method="POST">
+                                    <div class="container-inputs">
+                                        <input type="text" name="nombre" placeholder="Nombre:">
+                                        <input type="text" name="email" placeholder="Email:">
+                                        <textarea name="consulta" placeholder="Consulta:"></textarea>
+
+                                        <input type="hidden" name="_next" value="http://agileminds.com.ar/ ">
+                                    </div>
+                                    <button>Enviar</button>
+                                    <div id="mensajes">
+                                        <span id="errNombre"></span>
+                                        <span id="errEmail"></span>
+                                        <span id="errConsulta"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu_hamburger">
+                    <img src="Img/menu.svg" class="menu_img">
+                </div>
+            </section>
+        </nav>
+        <section class="textos">
+            <h1 class="titulo">Agile Minds</h1>
+            <h3 class="subtitulo">Agilidad y Excelencia</h3>
+                <a href="index.php" class="boton">Contactanos</a>
+        </section>
+        <div class="sesgo-abajo"></div>
+    </header>
+    <main>
+        <section class="acerca-de">
+            <article class="contenedor">
+                <h2 class="talleres">Talleres</h2>
+                <h3 class="slogan">Si eres capaz de <strong>Soñarlo</strong> eres capaz de <strong>Lograrlo</strong></h3>
+                <p class="parrafo">
+                    Por el momento no tenemos talleres disponibles para ofrecerte…
+                </p>
+                <p class="parrafo">
+                    Pero no te preocupes, desde Agile Minds estamos trabajando para traerte las mejores oportunidades de crecimiento personal y profesional. Para nosotros es importante acompañarte en el camino que escogiste, y te traeremos las herramientas necesarias para que puedas recorrerlo a través de nuestros talleres para la comunidad. Estaremos actualizando pronto…
+                </p>
+                <p class="parrafo">
+                    No importa si eres nuevo recorriendo el camino, lo importante es que iniciaste. Permítete ser un principiante. Nadie comienza siendo excelente. Nuestro equipo estará siempre para guiarte en lo que necesites…
+                </p>
+                <a href="index.php" class="boton">Contactanos</a>
+            </article>
+        </section>
+        <section class="gallery">
+            <div class="sesgo-arriba"></div>
+            <article class="imagenes">
+                <img src="Img/calendario.jpg" alt="">
+            </article>
+            <article class="imagenes">
+                <img src="Img/office-620822_1920.jpg" alt="">
+            </article>
+            <article class="imagenes">
+                <img src="Img/macbook.jpg" alt="">
+            </article>
+            <article class="imagenes">
+                <img src="Img/startup-593310_1920.jpg" alt="">
+                <div class="encima">
+                    <h2>AgileMinds</h2>
+                    <div></div>
+                </div>
+            </article>
+            <article class="imagenes">
+                <img src="Img/job-5382501_1920.jpg" alt="">
+            </article>
+            <div class="sesgo-abajo"></div>
+        </section>
+
+        <!-- <section class="frase">
+            <article class="contenedor">
+                <h2 class="sobre-nosotros">Nuestro Equipo</h2>
+                <h3 class="slogan">Conoce nuestra metodologia de trabajo</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="Img/logo.jpeg" alt="">
+                        <h4>Agile Minds</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="card">
+                        <img src="Img/logo.jpeg" alt="">
+                        <h4>Agile Minds</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="card">
+                        <img src="Img/logo.jpeg" alt="">
+                        <h4>Agile Minds</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </article>
+        </section> -->
+        
+        <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="btn-linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </main>
+    <!-- <footer>
+        <section class="contenedor">
+            <h2 class="titulo-footer">Contactanos</h2>
+            <h3 class="subtitulo-footer">Lo apreciariamos mucho</h3>
+            <article class="footer">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Nombre">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="">
+                </form>
+            </article>
+        </section>
+    </footer> -->
+    <footer>
+        <section id="footer-content">
+            <div id="redes">
+                <h3>&copy;2023 AgileMinds</h3>
+                <a href="#" class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>3489500063
+                </a>
+            </div>
+            <div id="text">
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>agileminds@hormail.com
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/agile-minds-415a0b4b/
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
