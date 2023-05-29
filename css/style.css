@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     width: 100%;
 }
@@ -141,17 +145,21 @@ header nav section h1 {
     .menu_hamburger {
         display: flex;
     }
-    .menu_item{
+
+    .menu_item {
         --clip: 0;
         overflow: hidden;
     }
+
     .menu_item--active {
         --transform: rotate(0);
         --background: #5e7094;
     }
+
     .menu_item--show {
         background-color: var(--background);
     }
+
     .menu_links {
         position: fixed;
         max-width: 400px;
@@ -165,20 +173,25 @@ header nav section h1 {
         grid-auto-rows: max-content;
         transform: translateX(100%);
     }
+
     .menu_links--show {
         transform: unset;
         width: 100%;
     }
+
     .menu_link {
         padding: 25px 0;
         padding-left: 30px;
         height: auto;
     }
+
     .fa-solid {
         margin-left: auto;
         margin-right: 20px;
     }
-    .menu_nesting, .menu_nesting2 {
+
+    .menu_nesting,
+    .menu_nesting2 {
         display: grid;
         position: unset;
         width: 100%;
@@ -186,6 +199,7 @@ header nav section h1 {
         height: 0;
         transition: height .3s;
     }
+
     .menu_link--inside {
         width: 90%;
         margin-left: auto;
@@ -323,17 +337,24 @@ header nav section h1 {
 /* ------------------------------------------------------------ */
 
 @media (max-width: 800px) {
-    .header, .content {
+
+    .header,
+    .content {
         display: flex;
         text-align: center;
     }
-    .header-video, .banner {
+
+    .header-video,
+    .banner {
         max-width: 800px;
         width: 100%;
     }
-    .header-overlay, .banner-overlay{
+
+    .header-overlay,
+    .banner-overlay {
         display: none;
     }
+
     .header-content h1 {
         max-width: 400px;
         width: 240px;
@@ -342,26 +363,32 @@ header nav section h1 {
         background-color: rgba(48, 57, 82, 0.807);
         transform: translateY(-200%);
     }
+
     .header-content .btn {
         transform: translateY(-480%);
         text-align: center;
     }
+
     .header-serv h1 {
         font-weight: bold;
         font-size: 40px;
         background-color: rgba(48, 57, 82, 0.807);
         transform: translateY(-160%);
     }
+
     #carouselExampleSlidesOnly img {
         height: 200px;
     }
-    #vision , #valores-vision {
+
+    #vision,
+    #valores-vision {
         display: none;
     }
+
     footer {
         display: none;
     }
-} 
+}
 
 
 #vision {
@@ -741,7 +768,8 @@ textarea {
 
 .btn-linkedin:hover {
     text-decoration: none;
-    color: rgb(30, 48, 80);;
+    color: rgb(30, 48, 80);
+    ;
     background-color: #fff;
 }
 
@@ -991,322 +1019,104 @@ footer {
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */
 
-
-
-
-#banner-testimonios{
-    background: url(img/Contact.png);
-    background-size: cover;
-}
-
-#banner-testimonios h1{
-    color: #111010;
-    text-align: center;
- padding-top: 100px;
-}
-
-#testi- {
-    background-color: #ffffff;
-    height: 300px;
-    width: 1000px;
-    margin: auto;
-    border-radius: 20px;
-
-}
-
-#testi- p {
-    text-align: center;
-    color: #000000;
-    font-size: 23px;
-    margin-top: 80px;
-    padding-top: 100px;
-    font-size: 27px;
-    font
-}
-
-
-.carousel img {
-    width: 200px;
-    height: 200px;
-}
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 70%;
-    margin: 100px auto;
-}
-
-.carousel button {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 900px;
-}
-
-.carousel-images {
-    display: flex;
+.tesimonio {
     width: 100%;
-    transition: transform 0.3s ease-in-out;
-    height: 300px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 100px;
+    background: #aa4b6b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.div_tesimonio p {
+    width: 50%;
+    margin: auto;
     margin-top: 20px;
-
-
-}
-
-.carousel-images img {
-    width: 30%;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    margin-left: 10px;
-    border-radius: 8px;
-
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 4rem;
-    cursor: pointer;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-
-
-
-.carousel-button-prev {
-    left: 0;
-    padding-bottom: 170px;
-}
-
-.carousel-button-next {
-    right: 0;
-    padding-bottom: 180px;
-
-}
-
-
-
-
-
-/* Lista de empresas
-    -espacio para la libertad
-    -fundacion pescar
-    -grif
-    -merisant
-    -monsanto
-    -RadaNet
-    -Toyota
-    -DESCARGAR LOGOS DE LA SEMPRESAS QUE
-*/
-
-
-#libertad {
-    background-color: #14305B;
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
     color: #fff;
-    border-radius: 30px;
-    height: 400px;
-    width: 900px;
-    align-items: center;
-    margin: auto;
+}
+
+.fa-quote-left {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 250px;
+    color: #16172f;
+}
+
+.fa-quote-right {
+    font-size: 50px;
+    margin-left: 1100px;
+    color: #16172f;
+}
+
+.nav_vertical {
+    width: 100%;
     margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#libertad p {
-    margin-left: 30px;
-    font-size: 23px;
-    padding-top: 110px;
-    font-size: 20px;
+.nav_vertical nav a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 50px;
+    margin-left: 50px;
+    text-align: center;
+    display: block;
+    color: #16172f;
+    transition: .5;
 }
 
-#libertad img {
-    float: right;
-    margin-top: 50px;
-    margin-right: 30px;
-    border-radius: 20px;
-    width: 300px;
-    margin-left: 15px;
-
-}
-
-
-#pescar {
-    background-color: #14305B;
+.nav_vertical nav a:hover {
+    background-color: rgba(44, 76, 125, 0.666);
+    font-weight: bold;
     color: #fff;
-    border-radius: 30px;
-    height: 400px;
-    width: 900px;
-    align-items: center;
+}
+
+#radanet,
+#epl,
+#mentes {
+    width: 70%;
+    text-align: justify;
     margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
 }
 
-#pescar p {
-    margin-left: 30px;
-    font-size: 25px;
-    padding-top: 95px;
-    padding-right: 400px;
-    font-size: 20px;
+#radanet {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#pescar img {
-    float: right;
-    margin-top: 100px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
-
+#epl {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-#greif {
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 400px;
-    width: 900px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
+#mentes {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#greif p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 120px;
-}
-
-#greif img {
-    float: right;
-    margin-top: 150px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
-
-}
-
-
-#meri {
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
-}
-
-#meri p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 120px;
-}
-
-#meri img {
-    float: right;
-    margin-top: 136px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
-
-}
-
-#monsanto {
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 500px;
-    width: 1000px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
-}
-
-#monsanto p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 120px;
-}
-
-#monsanto img {
-    float: right;
-    margin-top: 136px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
-
-}
-
-#rada {
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 400px;
-    width: 900px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
-}
-
-#rada p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 80px;
-    padding-right: 400px;
-    font-size: 20px;
-}
-
-#rada img {
-    float: right;
-    margin-top: 135px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
-
-}
-
-#toyota {
-    background-color: #14305B;
-    color: #fff;
-    border-radius: 30px;
-    height: 400px;
-    width: 900px;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 4px 4px rgba(0, 0.10, 0.10, 0.55);
-
-}
-
-#toyota p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding-top: 90px;
-    font-size: 20px;
-    padding-right: 400px;
-}
-
-#toyota img {
-    float: right;
+.text {
+    width: 60%;
+    margin-left: 70px;
     margin-top: 80px;
-    margin-right: 40px;
-    border-radius: 20px;
-    width: 350px;
+}
 
+.text h4 {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+}
+
+.img_emp {
+    width: 300px;
+    height: 300px;
 }

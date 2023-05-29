@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,186 +7,162 @@
     <title>Agile Minds</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scrollreveal.js"></script>
     <link rel="stylesheet" href="php/contacto.php">
 </head>
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu_container">
+                <img src="Img/logo.jpeg" alt="" id="logo">
+                <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="index.html" class="menu_link">Inicio</a>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting">
+                            <li>
+                                <a href="seleccion.html" class="menu_link menu_link--inside">Empresas</a>
+                            </li>
+                            <li>
+                                <a href="individuos.html" class="menu_link menu_link--inside">Individuos</a>
+                            </li>
+                            <li>
+                                <a href="tecnologias.html" class="menu_link menu_link--inside">Tecnología</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="menu_nesting2">
+                            <li>
+                                <a href="nosotros.html" class="menu_link menu_link--inside">Quienes Somos</a>
+                            </li>
+                            <li>
+                                <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="menu_item">
+                        <a href="/" class="menu_link">Ofertas</a>
+                    </li> -->
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">Talleres</a>
+                    </li>
+                    <li class="menu_item">
+                        <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
 
-<body id="testimonioss">
-    <nav class="menu">
-        <section class="menu_container">
-            <img src="Img/logo.jpeg" alt="" id="logo">
-            <ul class="menu_links">
-                <li class="menu_item">
-                    <a href="index.html" class="menu_link">Inicio</a>
-                </li>
-                <li class="menu_item menu_item--show">
-                    <a href="#" class="menu_link">Servicios<i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="menu_nesting">
-                        <li>
-                            <a href="seleccion.html" class="menu_link menu_link--inside">Empresas</a>
-                        </li>
-                        <li>
-                            <a href="individuos.html" class="menu_link menu_link--inside">Individuos</a>
-                        </li>
-                        <li>
-                            <a href="tecnologias.html" class="menu_link menu_link--inside">Tecnologias</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu_item menu_item--show">
-                    <a href="#" class="menu_link">Nosotros<i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="menu_nesting2">
-                        <li>
-                            <a href="nosotros.html" class="menu_link menu_link--inside">Quienes Somos</a>
-                        </li>
-                        <li>
-                            <a href="testimonios.html" class="menu_link menu_link--inside">Testimonios</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- <li class="menu_item">
-                    <a href="/" class="menu_link">Ofertas</a>
-                </li> -->
-                <li class="menu_item">
-                    <a href="#" class="menu_link">Talleres</a>
-                </li>
-                <li class="menu_item">
-                    <button class=" menu_link btn-abrir-popup" id="btn-abrir-popup">Contacto</button>
-
-                    <div class="overlay" id="overlay">
-                        <div class="popup" id="popup">
-                            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
-                                <i class="fa-solid fa-xmark"></i>
-                            </a>
-                            <h3><strong>Contactate con Nosotros</strong></h3>
-                            <h4>Queremos Ayudarte</h4>
-                            <form id="form" action="contacto.php" method="post">
-                                <div class="container-inputs">
-                                    <input type="text" name="nombre" placeholder="Nombre:">
-                                    <input type="text" name="email" placeholder="Email:">
-                                    <textarea name="consulta" placeholder="Consulta:"></textarea>
-                                </div>
-                                <button>Enviar</button>
-                                <div id="mensajes">
-                                    <span id="errNombre"></span>
-                                    <span id="errEmail"></span>
-                                    <span id="errConsulta"></span>
-                                </div>
-                            </form>
+                        <div class="overlay" id="overlay">
+                            <div class="popup" id="popup">
+                                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><strong>Contactate con Nosotros</strong></h3>
+                                <h4>Queremos Ayudarte</h4>
+                                <form id="form" action="contacto.php" method="post">
+                                    <div class="container-inputs">
+                                        <input type="text" name="nombre" placeholder="Nombre:">
+                                        <input type="text" name="email" placeholder="Email:">
+                                        <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                    </div>
+                                    <button>Enviar</button>
+                                    <div id="mensajes">
+                                        <span id="errNombre"></span>
+                                        <span id="errEmail"></span>
+                                        <span id="errConsulta"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu_hamburger">
+                    <img src="Img/menu.svg" class="menu_img">
+                </div>
+            </section>
+        </nav>
+        <section class="header">
+            <div class="banner">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Img/glass-3276648_1920.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Img/banner.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Img/people-g02bce9c11_1280.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                </li>
-            </ul>
-            <div class="menu_hamburger">
-                <img src="Img/menu.svg" class="menu_img">
+                </div>
+            </div>
+            <div class="banner-overlay"></div>
+            <div class="header-serv">
+                <h1><strong>"Testimonios"</strong></h1>
             </div>
         </section>
-    </nav>
-
-    <section id="banner-testimonios">
-        <h1>Testimonios</h1>
-
-    </section>
-
-    <section id="testi">
-        <div id="testi-">
-            <p>"Los usuarios son conscientes de que un servicio perfecto <br> existe en un mundo utópico"</p>
-    </section>
-    </div>
-
-    <!-- <div class="carousel">
-        <div class="carousel-images">
-            <img src="img/logos-empresas/Espacio para la libertad.jpg" alt="img 1">
-            <img src="img/logos-empresas/Fundación Pescar.jpg" alt="img 2">
-            <img src="img/logos-empresas/Greif.jpg" alt="img 3">
-            <img src="img/logos-empresas/Merisant.jpg" alt="img 4">
-            <img src="img/logos-empresas/Monsanto.jpg" alt="img 5">
-            <img src="img/logos-empresas/RadaNet.jpg" alt="img 6">
-            <img src="img/logos-empresas/Toyota logo.jpg" alt="img 7">
-        </div>
-        <button class="carousel-button carousel-button-prev">&#8249;</button>
-        <button class="carousel-button carousel-button-next">&#8250;</button>
-    </div>
--->
-
-    <section id="testimonios-">
-        <div id="libertad">
-            <img src="Img/logos-empresas/Espacio para la libertad.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat soluta nam libero commodi labore
-                repellendus saepe doloremque corporis ea? Aperiam consectetur exercitationem alias veritatis error minus
-                eveniet, quo unde quasi. Facilis beatae modi explicabo sunt quas eum error id.
-            </p>
-        </div>
-    </section>
-
-    <section id="testimonios-">
-        <div id="pescar">
-            <img src="Img/logos-empresas/Fundación Pescar.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat soluta nam libero commodi labore
-                repellendus saepe doloremque corporis ea? Aperiam consectetur exercitationem alias veritatis error minus
-                eveniet, quo unde quasi. Facilis beatae modi explicabo sunt quas eum error id.
-            </p>
-        </div>
-    </section>
-
-    <!--<section id="testimonios-">
-        <div id="greif">
-            <img src="Img/logos-empresas/Greif.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat soluta nam libero commodi labore
-                repellendus saepe doloremque corporis ea? Aperiam consectetur exercitationem alias veritatis error minus
-                eveniet, quo unde quasi. Facilis beatae modi explicabo sunt quas eum error id.
-            </p>
-        </div>
-    </section>
-
-    <section id="testimonios-">
-        <div id="meri">
-            <img src="Img/logos-empresas/Merisant.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat soluta nam libero commodi labore
-                repellendus saepe doloremque corporis ea? Aperiam consectetur exercitationem alias veritatis error minus
-                eveniet, quo unde quasi. Facilis beatae modi explicabo sunt quas eum error id.
-            </p>
-        </div>
-    </section>
-
-    <section id="testimonios-">
-        <div id="monsanto">
-            <img src="Img/logos-empresas/Monsanto.jpg" alt="">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum illum laudantium cumque architecto non
-                quas ipsum deleniti quam beatae minima accusamus dolore eum ab tempore repellat vel amet dolores ad
-                libero facilis porro, blanditiis quidem provident! Alias suscipit voluptatem ullam!
-            </p>
-        </div>
-    </section>
--->
-    <section id="testimonios-">
-        <div id="rada">
-            <img src="Img/logos-empresas/RadaNet.jpg" alt="">
-            <p> Comencé coaching empresarial con Lucia, y desde ese momento fui experimentando un gran crecimiento!
-                estoy agradecida a esta oportunidad de crecer y mejorar,fue y es para mí importante sentir que estaba
-                acompañada y de la mejor manera en este proceso de continua mejora personal y profesional.
-            </p>
-        </div>
-    </section>
-
-    <!--   <section id="testimonios-">
-        <div id="toyota">
-            <img src="Img/logos-empresas/Toyota logo.jpg" alt="">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat soluta nam libero commodi labore
-                repellendus saepe doloremque corporis ea? Aperiam consectetur exercitationem alias veritatis error minus
-                eveniet, quo unde quasi. Facilis beatae modi explicabo sunt quas eum error id.
-            </p>
-        </div>
-    </section>
-    <a href="#" class="btn-linkedin">
-        <i class="fa-brands fa-linkedin-in"></i>
-    </a>
+    </header>
+    <main>
+        <section class="tesimonio">
+            <div class="div_tesimonio">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                    Que tus <strong>SUEÑOS</strong> sean siempre más grandes que tus <strong>miedos</strong>.
+                </p>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+        </section>
+        <section class="nav_vertical">
+            <nav>
+                <a href="#radanet" onclick="showHide('radanet')">Radanet</a>
+                <a href="#epl" onclick="showHide('epl')">EPL</a>
+                <a href="#mentes" onclick="showHide('mentes')">Mentes <br> Extraordinarias</a>
+            </nav>
+            <article id="radanet">
+                <img src="Img/logos-empresas/Radanet.jpg" class="img_emp">
+                <div class="text">
+                    <p>
+                        "Comencé coaching empresarial con Lucia, y desde ese momento fui experimentando un ¡gran crecimiento! Estoy agradecida con esta oportunidad de crecer y mejorar, fue y es para mi importante sentir que estaba acompañada y de la mejor mamera en este proceso de continua mejora personal y profesional."
+                    </p>
+                    <h4>Verónica Rodriguez, dueña y gerente en RadaNet</h4>
+                </div>
+            </article>
+            <article id="mentes">
+                <img src="Img/logos-empresas/WhatsApp Image 2023-03-19 at 15.39.39.jpeg" class="img_emp">
+                <div class="text">
+                    <p>
+                        “Gracias al asesoramiento de Agile Minds en capacitaciones y coaching he aprendido a abrazar los desafíos, y conectar con los que realmente soy. No puedo expresar con palabras lo agradecida que estoy por el nivel de profesionalismo del equipo.”
+                    </p>
+                    <h4>Arlyne García</h4>
+                </div>
+            </article>
+            <article id="epl">
+                <img src="Img/logos-empresas/Espacio para la libertad.jpg" class="img_emp">
+                <div class="text">
+                    <p>
+                        “Agradecemos al equipo de Agile Minds por la agilidad y experiencia en sus servicios, el nombre representa su cultura al 100%”
+                    </p>
+                    <h4>Equipo EPL</h4>
+                </div>
+            </article>
+        </section>
 
 
--->
+
+        <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="btn-linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </main>
 
     <footer>
         <section id="footer-content">
@@ -213,6 +188,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/nav_vertical.js"></script>
 </body>
 
 </html>
