@@ -23,3 +23,4 @@ function showHide(escenarios)
         mentes.style.display = 'none'
     }
 }
+
