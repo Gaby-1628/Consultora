@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/623d2400f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="php/contacto.php">
 </head>
 
 <body>
@@ -58,24 +59,24 @@
 
                         <div class="overlay" id="overlay">
                             <div class="popup" id="popup">
-                                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </a>
-                                    <h3><strong>Contactate con Nosotros</strong></h3>
-                                    <h4>Queremos Ayudarte</h4>
-                                    <form id="form" action="contacto.php" method="post">
-                                        <div class="container-inputs">
-                                            <input type="text" name="nombre" placeholder="Nombre:">
-                                            <input type="text" name="email" placeholder="Email:">
-                                            <textarea name="consulta" placeholder="Consulta:"></textarea>
-                                        </div>
-                                        <button>Enviar</button>
-                                        <div id="mensajes">
-                                            <span id="errNombre"></span>
-                                            <span id="errEmail"></span>
-                                            <span id="errConsulta"></span>
-                                        </div>
-                                    </form>
+                                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                                <h3><strong>Contactate con Nosotros</strong></h3>
+                                <h4>Queremos Ayudarte</h4>
+                                <form id="form" action="contacto.php" method="post">
+                                    <div class="container-inputs">
+                                        <input type="text" name="nombre" placeholder="Nombre:">
+                                        <input type="text" name="email" placeholder="Email:">
+                                        <textarea name="consulta" placeholder="Consulta:"></textarea>
+                                    </div>
+                                    <button>Enviar</button>
+                                    <div id="mensajes">
+                                        <span id="errNombre"></span>
+                                        <span id="errEmail"></span>
+                                        <span id="errConsulta"></span>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </li>
@@ -112,7 +113,7 @@
     </header>
     <main>
         <section id="tcn">
-            <h1>Nuestros <br> Servicios <strong>Tecnológicos</strong></h1>
+            <h2>Nuestros <br> Servicios <strong>Tecnológicos</strong></h2>
             <p>
                 En Agile Minds generamos soluciones a la medida de tu necesidad.
                 <strong>Reducimos costos, riesgos y le damos flexibilidad a tu empresa.</strong> Ofrecemos un servicio
@@ -125,9 +126,11 @@
                 <img src="Img/laptop.jpg">
             </div>
             <div class="text_item">
-                <h1>Armado de Páginas Web</h1>
+                <h2>Armado de Páginas Web</h2>
                 <p>
-                    <strong>¡Nos encantan los desafíos!</strong> Cualquiera sea tu necesidad, podemos ayudarte a impulsar tu empresa. Diseñamos tu página web a la medida de lo que quieras comunicar. Servicio Personalizado. Posicionamiento Estratégico. Soluciones Pragmáticas.
+                    <strong>¡Nos encantan los desafíos!</strong> Cualquiera sea tu necesidad, podemos ayudarte a
+                    impulsar tu empresa. Diseñamos tu página web a la medida de lo que quieras comunicar. Servicio
+                    Personalizado. Posicionamiento Estratégico. Soluciones Pragmáticas.
                 </p>
                 <a href="form-presu.html" class="btn">Consultanos </a>
             </div>
@@ -137,7 +140,7 @@
                 <img src="Img/digital-marketing (2).jpg">
             </div>
             <div class="text_item">
-                <h1>Marketing Digital</h1>
+                <h2>Marketing Digital</h2>
                 <p>
                     <strong>¿Queres hacer publicidad online maximizando el retorno de la inversión?</strong> Te ayudamos
                     a lanzar, desarrollar y construir tu negocio, sin importar el tamaño. Haz crecer tu negocio con la
@@ -151,47 +154,39 @@
                 <img src="Img/freelancer.jpg">
             </div>
             <div class="text_item">
-                <h1>Diseño Grafico</h1>
+                <h2>Diseño Grafico</h2>
                 <p>
-                    Creamos piezas de comunicación visual a tu medida. <strong>Nos encanta el arte y proyectar ideas y experiencias con contenido visual y textual únicos</strong>. No importa si necesitas identificar tu marca, transmitir un mensaje, encontrar una gran oferta de valor o atraer a tu cliente ideal, si puedes imaginarlo podemos crearlo.
+                    Creamos piezas de comunicación visual a tu medida. <strong>Nos encanta el arte y proyectar ideas y
+                        experiencias con contenido visual y textual únicos</strong>. No importa si necesitas identificar
+                    tu marca, transmitir un mensaje, encontrar una gran oferta de valor o atraer a tu cliente ideal, si
+                    puedes imaginarlo podemos crearlo.
                 </p>
                 <a href="form-presu.html" class="btn">Consultanos </a>
             </div>
         </article>
-        <!-- <section id="contacto">
-            <form action="contacto.php" method="post">
-                <input type="text" name="nombre" placeholder="Nombre:">
-                <input type="text" name="email" placeholder="Email:">
-                <textarea name="consulta" placeholder="Consulta:"></textarea>
-                <button>Enviar</button>
-                <div id="mensajes">
-                    <span id="errNombre"></span>
-                    <span id="errEmail"></span>
-                    <span id="errConsulta"></span>
-                </div>
-            </form>
-        </section> -->
         <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://www.linkedin.com/in/agile-minds-415a0b4b" class="btn-linkedin">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
+        </a>
+        <a href="https://www.linkedin.com/in/agile-minds-415a0b4b" class="btn-linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
         </a>
     </main>
     <footer>
         <section id="footer-content">
             <div id="redes">
                 <h3>&copy;2023 AgileMinds</h3>
+                <!-- <a href="#" class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>3489500063
+                </a> -->
+            </div>
+            <div id="text">
+                <!-- <a href="#">
+                    <i class="fa-regular fa-envelope"></i>agileminds@hormail.com
+                </a> -->
                 <a href="#" class="whatsapp">
                     <i class="fa-brands fa-whatsapp"></i>3489500063
                 </a>
-            </div>
-            <div id="text">
-                <a href="#">
-                    <i class="fa-regular fa-envelope"></i>agileminds@hormail.com
-                </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/agile-minds-415a0b4b">
                     <i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/agile-minds-415a0b4b/
                 </a>
             </div>
