@@ -789,7 +789,6 @@ footer {
 #footer-content {
     width: 100%;
     height: 120px;
-    margin-top: 90px;
 }
 
 #redes {
@@ -797,24 +796,23 @@ footer {
     float: left;
     width: 400px;
     height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
 }
 
 #redes h3 {
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    font-weight: bold;
 }
 
-#redes .fa-brands {
-    color: #000000;
-    margin-left: 20px;
-}
-
-.whatsapp {
+/* .whatsapp {
     margin-left: 100px;
     color: #000000;
+} */
+.whatsapp i {
+    padding: 0 10px;
 }
 
 #text {
@@ -833,7 +831,7 @@ footer {
 
 .fa-envelope,
 .fa-linkedin {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /* ------------------------------------------------------------ */
@@ -846,7 +844,7 @@ footer {
     margin-top: 100px;
 }
 
-#tcn h1 {
+#tcn h2 {
     text-align: center;
     margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
@@ -881,7 +879,7 @@ footer {
     margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 #one p {
@@ -890,16 +888,11 @@ footer {
     text-align: justify;
 }
 
-#exaples_item {
-    width: 100%;
-    height: 800px;
-    display: flex;
-}
-
 .content_item {
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
+    padding: 50px 0;
     background: #fff;
 }
 
@@ -972,11 +965,6 @@ footer {
 /* ------------------------------------------------------------ */
 /* ---------------------- TESTIMONIOS ------------------------- */
 /* ------------------------------------------------------------ */
-
-main {
-    margin-bottom: 200px;
-}
-
 
 .testimonios {
     width: 100%;
@@ -1088,4 +1076,26 @@ main {
 .img_emp {
     width: 300px;
     height: 300px;
+}
+
+
+.frase {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background: #aa4b6b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.frase p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
 }

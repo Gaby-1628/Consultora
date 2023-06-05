@@ -178,8 +178,8 @@ header .subtitulo {
 
 .slaider .slaide-track {
     display: flex;
-    animation: scroll 10s linear infinite;
-    width: calc(200px * 16);
+    animation: scroll 5s linear infinite;
+    width: calc(200px * 6);
 }
 
 .slaider .slaide {
@@ -197,7 +197,43 @@ header .subtitulo {
     }
 
     100% {
-        transform: translateX(calc(-200px *8));
+        transform: translateX(calc(-200px *3));
+    }
+}
+
+
+
+
+
+.slaider2{
+    width: 50%;
+    height: auto;
+    margin-left: 550px;
+    overflow: hidden;
+}
+
+.slaider2 .slaide-track2 {
+    display: flex;
+    animation: scroll 8s linear infinite;
+    width: calc(200px * 10);
+}
+
+.slaider2 .slaide2 {
+    width: 70px;
+}
+
+.slaider2 .slaide2 img {
+    width: 100%;
+    height: 60px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-200px *5));
     }
 }
 
