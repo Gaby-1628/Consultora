@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body{
+    background-color: #174fb6;
+}
+.container{
+    margin-top: 200px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  input, textarea{
+        width: 650px;
+        padding: 8px;
+        margin: 8px 0px;
+        font-family: Raleway, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #002a85;
+        border-radius: 8px;
+        border: 1px solid #000853;
+        background-color: #ffffff;
+  }
+
+  button{
+    width: 212px;
+    padding: 8px 0px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    transition: 500ms;
+    cursor: pointer
+  }
+
+  button:hover{
+    color: #fff;
+    background-color: #4982ce;
+}
+
+
+#atras {
+    margin: auto;
+    width: 1100px;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#volver {
+    color: #FFF;
+    margin-left: 110px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+#volver:hover {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #00be03;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #00be03;
+    background-color: #fff;
+}
+
+
+.btn-linkedin {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 100px;
+    right: 30px;
+    background-color: rgb(30, 48, 80);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.btn-linkedin:hover {
+    text-decoration: none;
+    color: rgb(30, 48, 80);
+    ;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
