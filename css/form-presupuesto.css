@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-body{
+
+body {
     background-color: #174fb6;
 }
-.container{
+
+.container {
     margin-top: 200px;
 }
 
@@ -12,23 +14,24 @@ h1 {
     margin: 35px 0 20px 0 !important;
     font-size: 34px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
 
 
-  input, textarea{
-        width: 650px;
-        padding: 8px;
-        margin: 8px 0px;
-        font-family: Raleway, sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        color: #002a85;
-        border-radius: 8px;
-        border: 1px solid #000853;
-        background-color: #ffffff;
-  }
+input,
+textarea {
+    width: 650px;
+    padding: 8px;
+    margin: 8px 0px;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #002a85;
+    border-radius: 8px;
+    border: 1px solid #000853;
+    background-color: #ffffff;
+}
 
-  button{
+button {
     width: 212px;
     padding: 8px 0px;
     border: 1px solid #ffffff;
@@ -40,9 +43,9 @@ h1 {
     color: #000000;
     transition: 500ms;
     cursor: pointer
-  }
+}
 
-  button:hover{
+button:hover {
     color: #fff;
     background-color: #4982ce;
 }
@@ -116,10 +119,3 @@ h1 {
     ;
     background-color: #fff;
 }
-
-
-
-
-
-
-
