@@ -169,20 +169,14 @@
         width: 100%;
     }
 
-    .header-overlay {
-        display: none;
-    }
+    
 
     .header-content h1 {
-        width: auto;
-        height: 120px;
         display: flex;
         align-items: center;
         margin: auto;
         font-weight: bold;
         font-size: 20px;
-        transform: translateY(-100%);
-        background-color: rgba(48, 57, 82, 0.807);
     }
 
     .header-content .btn {
@@ -205,7 +199,7 @@
     }
 
     #mision p {
-        width: 50%;
+        width: 80%;
         text-align: center;
         margin: auto;
         font-size: 20px;
@@ -228,7 +222,7 @@
         color: #fff;
         text-align: center;
         margin: auto;
-        width: 70%;
+        width: 80%;
     }
 
     #valores-texto h2 {
@@ -258,7 +252,7 @@
         width: 70%;
     }
 
-    img {
+    .img img {
         display: none;
     }
 
