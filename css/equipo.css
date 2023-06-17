@@ -165,7 +165,7 @@ header .subtitulo {
 }
 
 
-.empresas{
+.empresas {
     width: auto;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -185,7 +185,7 @@ header .subtitulo {
 /* ---------------------- SLAIDE INFINITO --------------------- */
 /* ------------------------------------------------------------ */
 
-.slaider{
+.slaider {
     width: 90%;
     height: auto;
     margin: auto;
@@ -221,7 +221,7 @@ header .subtitulo {
 
 
 
-.slaider2{
+.slaider2 {
     width: 50%;
     height: auto;
     margin-left: 550px;
@@ -278,12 +278,12 @@ header .subtitulo {
         width: 100%;
         margin-top: 200px;
     }
-    
+
     .abaut h2 {
         font-size: 32px;
         margin-bottom: 16px;
     }
-    
+
     .abaut p {
         width: 80%;
         display: flex;
@@ -300,26 +300,34 @@ header .subtitulo {
     .eqp,
     .eqp2 {
         width: 100%;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .img-eqp,
     .img-eqp2 img {
         display: none;
     }
-    
+
     .txt {
-        width: 80%;
+        width: 100%;
+        height: auto;
         text-align: justify;
-        margin-right: 20px;
+        background: #34e89e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #0f3443, #34e89e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #0f3443, #34e89e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #fff;
     }
 
     .txt h2 {
+        margin-top: 12px;
         margin-bottom: 14px;
     }
-    
+
     .txt p {
-        width: 90%;
+        width: 80%;
     }
 
     /* .txt2 {
@@ -331,33 +339,42 @@ header .subtitulo {
     } */
 
     .txt2 {
-        width: 80%;
+        width: 100%;
         text-align: justify;
-        margin-left: 48px;
+        margin: auto;
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #fff;
     }
 
     .txt2 h2 {
         font-size: 20px;
         text-align: left;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
+        margin-top: 14px;
+        margin-left: 20px;
     }
 
     .txt2 p {
-        width: 90%;
-        margin-bottom: 80px;
+        width: 80%;
+        margin: auto;
     }
 
-    .empresas{
+    .empresas {
         margin-top: 80px;
         margin-bottom: 80px;
     }
-    
+
     .empresas h3 {
         margin-top: 80px;
         margin-bottom: 80px;
         text-align: center;
     }
-    
+
 
     #logros {
         display: none;

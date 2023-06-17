@@ -119,3 +119,17 @@ button:hover {
     ;
     background-color: #fff;
 }
+
+
+
+
+
+@media (max-width:800px) {
+    .container {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 80%;
+    }
+}

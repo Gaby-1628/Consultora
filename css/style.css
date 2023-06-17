@@ -228,16 +228,18 @@ header nav section h1 {
     top: 100px;
     left: 0;
     width: 100%;
-    height: 760px;
+    height: 700px;
     overflow: hidden;
 }
 
 .header-video video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.header-overlay {
-    height: 760px;
+.overlay-video {
+    height: 700px;
     width: 100%;
     position: absolute;
     top: 100px;
@@ -419,7 +421,6 @@ header nav section h1 {
 
     .header,
     .content {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,30 +433,10 @@ header nav section h1 {
         width: 100%;
     }
 
-    .header-overlay {
-        display: none;
-    }
-
-    .header-content h1 {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        font-weight: bold;
-        font-size: 40px;
-        background-color: rgba(48, 57, 82, 0.807);
-    }
-
-    .header-content .btn {
-        transform: translateY(-300%);
-    }
-
     #mision {
         width: 100%;
         height: auto;
-        margin-top: 0px;
+        margin-top: 140px;
         margin-bottom: 140px;
     }
 
@@ -509,29 +490,19 @@ header nav section h1 {
         width: 100%;
     }
 
-    .header-overlay {
-        display: none;
-    }
-
     .header-content h1 {
-        width: 100%;
-        height: 120px;
-        display: flex;
-        align-items: center;
+        width: 90%;
         margin: auto;
-        font-weight: bold;
-        font-size: 20px;
-        transform: translateY(-140%);
-        background-color: rgba(48, 57, 82, 0.807);
+        font-size: 28px;
     }
 
     .header-content .btn {
-        transform: translateY(-440%);
+        margin-top: 12px;
     }
 
     #mision {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 140px;
         margin-bottom: 140px;
     }
 

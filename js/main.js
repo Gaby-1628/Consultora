@@ -146,31 +146,7 @@ sr.reveal('#banner h1', {
     distance: '-100px'
 });
 
-/* --------------------- TESTIMONIOS ------------------ 
-
-
-const carouselImages = document.querySelector(".carousel-images");
-const carouselPrevButton = document.querySelector(".carousel-button-prev");
-const carouselNextButton = document.querySelector(".carousel-button-next");
-let currentIndex = 0;
-
-carouselPrevButton.addEventListener("click", () => {
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = carouselImages.children.length - 1;
-    }
-    carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-});
-
-carouselNextButton.addEventListener("click", () => {
-    currentIndex++;
-    if (currentIndex >= carouselImages.children.length) {
-        currentIndex = 0;
-    }
-    carouselImages.style.transform = `translateX(-${currentIndex * 33.33}%)`;
-});
-*/
-
+/* --------------------- TESTIMONIOS ------------------ */
 
 sr.reveal('#testi- p', {
     duration: 3000,
@@ -184,3 +160,16 @@ sr.reveal('carousel', {
     distance: '-100px'
 });
 
+/* ------------------------- NOSOTROS -------------------- */
+
+sr.reveal('.eqp', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+});
+
+sr.reveal('.eqp2', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+});
