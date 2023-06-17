@@ -1176,6 +1176,78 @@ footer {
 /* ----------------- TESTIMONIOS RESPONSIVE ------------------- */
 /* ------------------------------------------------------------ */
 
+@media (max-width:1200px) {
+
+    .waves,
+    .waves2 {
+        display: none;
+    }
+
+    .fa-quote-left,
+    .fa-quote-right {
+        display: none;
+    }
+
+    .testimonios {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .div_tesimonio p {
+        width: 80%;
+        margin: auto;
+
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .nav_vertical {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_vertical nav a {
+        padding: 14px;
+        margin-left: 14px;
+        display: inline-block;
+    }
+
+    #radanet,
+    #epl,
+    #mentes {
+        width: 100%;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .text {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .img_emp {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .frase p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-style: italic;
+        font-size: 16px;
+        color: #fff;
+    }
+
+}
+
 @media (max-width:800px) {
 
     .waves,
