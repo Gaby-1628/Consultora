@@ -155,3 +155,23 @@ header .boton {
     background: #fff;
     margin: auto;
 }
+
+/* ------------------------------------------------------------ */
+/* ------------------ TALLERES RESPONSIVE --------------------- */
+/* ------------------------------------------------------------ */
+
+@media screen and (max-width:800px){
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+
+    header .subtitulo {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 32px;
+    }
+}
