@@ -339,8 +339,15 @@ header nav section h1 {
 #vision-texto {
     background-color: #2C4C7D;
     float: right;
-    width: 50%;
+    width: 50%; /* Ancho predeterminado */
     height: 400px;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #vision-texto {
+        width: 60%; /* Cambia el ancho a 70% en dispositivos móviles */
+    }
 }
 
 #vision-texto h2 {
